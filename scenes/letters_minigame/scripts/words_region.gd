@@ -17,9 +17,6 @@ var endDraggingPosition: Vector2 = nullVector
 
 func _ready() -> void:
 	lineBetweenLetters.visible = false
-	
-	#call_deferred("initGamePole")
-
 
 func onLetterPressed(row: int, column: int):		
 	lineBetweenLetters.add_point(get_local_mouse_position())
@@ -53,8 +50,10 @@ func _process(delta: float) -> void:
 	if (dragging):
 		lineBetweenLetters.points[1] = get_local_mouse_position()
 
-func initGamePole():
+func initGamePole(initialWords: Array[String]):
+	levelWords = initialWords
 	
+func startGame():
 	for i in range(words.size()):
 		words[i].setWord(levelWords[i])
 	
@@ -62,7 +61,7 @@ func initGamePole():
 		var letters = levelWords[i].split("")
 		for j in range(letters.size()):
 			rows[i].rowCells[j].setLetter(letters[j])
-
+			
 func checkLineCoordinates() -> String:
 	if (startDraggingPosition == nullVector or endDraggingPosition == nullVector):
 		return ""

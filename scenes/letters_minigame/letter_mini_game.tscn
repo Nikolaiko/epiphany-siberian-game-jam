@@ -26,11 +26,13 @@ grow_vertical = 2
 [node name="MarginContainer" type="MarginContainer" parent="ParentContainer"]
 layout_mode = 2
 
-[node name="LettersRegion" type="MarginContainer" parent="ParentContainer/MarginContainer"]
+[node name="LettersRegion" type="MarginContainer" parent="ParentContainer/MarginContainer" node_paths=PackedStringArray("rows", "words")]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 script = ExtResource("1_01v6u")
+rows = [NodePath("Letter Rows/Row 1"), NodePath("Letter Rows/Row 2"), NodePath("Letter Rows/Row 3"), NodePath("Letter Rows/Row 4"), NodePath("Letter Rows/Row 5"), NodePath("Letter Rows/Row 6")]
+words = [NodePath("../WordsList/VBoxContainer/WordItem"), NodePath("../WordsList/VBoxContainer/WordItem2"), NodePath("../WordsList/VBoxContainer/WordItem3"), NodePath("../WordsList/VBoxContainer/WordItem4"), NodePath("../WordsList/VBoxContainer/WordItem5"), NodePath("../WordsList/VBoxContainer/WordItem6")]
 
 [node name="Letter Rows" type="VBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion"]
 layout_mode = 2
@@ -295,3 +297,5 @@ layout_mode = 2
 
 [node name="WordItem6" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
 layout_mode = 2
+
+[connection signal="ready" from="ParentContainer/MarginContainer/LettersRegion" to="." method="_on_letters_region_ready"]

@@ -2,13 +2,8 @@ extends Control
 
 class_name WordItem
 
-@onready var textField: TextEdit = $TextEdit
-
-func _ready() -> void:
-	print("Word reqdy")
-
 func setWord(newWord: String):
-	textField.text = newWord
+	get_node("TextEdit").text = newWord
 	
 func getWord() -> String:
-	return textField.text
+	return get_node("TextEdit").text

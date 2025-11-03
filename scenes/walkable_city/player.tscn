@@ -1,6 +1,6 @@
 [gd_scene load_steps=53 format=3 uid="uid://bx03gp2og7w88"]
 
-[ext_resource type="Script" uid="uid://3bqfvcul1nvm" path="res://scenes/walkable_city/player.gd" id="1_jxcf2"]
+[ext_resource type="Script" path="res://scenes/walkable_city/player.gd" id="1_jxcf2"]
 [ext_resource type="Texture2D" uid="uid://df78py13lj4c0" path="res://scenes/walkable_city/sprites/man-walking.png" id="1_qwi5o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jxcf2"]
