@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://d0oj2kn75fvvb"]
+[gd_scene load_steps=2 format=3 uid="uid://d0oj2kn75fvvb"]
+
+[ext_resource type="PackedScene" uid="uid://bx03gp2og7w88" path="res://scenes/walkable_city/player.tscn" id="1_4m0t0"]
 
 [node name="City" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_4m0t0")]
