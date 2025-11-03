@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://d0oj2kn75fvvb"]
+[gd_scene load_steps=3 format=3 uid="uid://d0oj2kn75fvvb"]
+
+[ext_resource type="PackedScene" uid="uid://ps4p66sdphoh" path="res://scenes/walkable_city/tile_map_layer.tscn" id="1_4io2a"]
+[ext_resource type="PackedScene" uid="uid://bx03gp2og7w88" path="res://scenes/walkable_city/player.tscn" id="2_kfcon"]
 
 [node name="City" type="Node"]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("1_4io2a")]
+
+[node name="Player" parent="." instance=ExtResource("2_kfcon")]
+position = Vector2(55, 107)

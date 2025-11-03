@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df78py13lj4c0"
-path="res://.godot/imported/man-walking.png-21f4fa88c4810f80d2ffb840dcd6a3c0.ctex"
+uid="uid://dcegqtqwf2qse"
+path="res://.godot/imported/_up walk.png-092ed3305fa7408233928b821f9b1300.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/walkable_city/sprites/man-walking.png"
-dest_files=["res://.godot/imported/man-walking.png-21f4fa88c4810f80d2ffb840dcd6a3c0.ctex"]
+source_file="res://scenes/walkable_city/sprites/_up walk.png"
+dest_files=["res://.godot/imported/_up walk.png-092ed3305fa7408233928b821f9b1300.ctex"]
 
 [params]
 
