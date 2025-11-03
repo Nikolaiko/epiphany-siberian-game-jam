@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://p8tn7ruveudx"]
+
+[ext_resource type="Script" path="res://scenes/letters_minigame/scripts/letter_cell.gd" id="1_5fbhr"]
+
+[node name="LetterCell" type="MarginContainer"]
+custom_minimum_size = Vector2(60, 60)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_5fbhr")
+
+[node name="LetterButton" type="Button" parent="."]
+layout_mode = 2
+text = "X"
+
+[connection signal="button_down" from="LetterButton" to="." method="_on_letter_button_button_down"]
+[connection signal="button_up" from="LetterButton" to="." method="_on_letter_button_button_up"]
+[connection signal="mouse_entered" from="LetterButton" to="." method="_on_letter_button_mouse_entered"]
+[connection signal="mouse_exited" from="LetterButton" to="." method="_on_letter_button_mouse_exited"]

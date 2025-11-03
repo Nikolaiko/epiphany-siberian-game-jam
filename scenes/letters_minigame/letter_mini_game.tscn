@@ -1,0 +1,297 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqcpn2e5wnr64"]
+
+[ext_resource type="Script" path="res://scenes/letters_minigame/scripts/words_region.gd" id="1_01v6u"]
+[ext_resource type="Script" path="res://scenes/letters_minigame/scripts/letter-game.gd" id="1_mg7uy"]
+[ext_resource type="PackedScene" uid="uid://p8tn7ruveudx" path="res://scenes/letters_minigame/letter_cell.tscn" id="2_k6km5"]
+[ext_resource type="Script" path="res://scenes/letters_minigame/scripts/cells_row.gd" id="2_oiqdg"]
+[ext_resource type="PackedScene" uid="uid://b762fyjr7kvqq" path="res://scenes/letters_minigame/word_item.tscn" id="4_4k46b"]
+
+[node name="LetterMiniGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mg7uy")
+
+[node name="ParentContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ParentContainer"]
+layout_mode = 2
+
+[node name="LettersRegion" type="MarginContainer" parent="ParentContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+script = ExtResource("1_01v6u")
+
+[node name="Letter Rows" type="VBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion"]
+layout_mode = 2
+
+[node name="Row 1" type="HBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows" node_paths=PackedStringArray("rowCells")]
+layout_mode = 2
+script = ExtResource("2_oiqdg")
+rowCells = [NodePath("LetterCell"), NodePath("LetterCell2"), NodePath("LetterCell3"), NodePath("LetterCell4"), NodePath("LetterCell5"), NodePath("LetterCell6")]
+
+[node name="LetterCell" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 1" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell2" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 1" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+column = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell3" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 1" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+column = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell4" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 1" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+column = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell5" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 1" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+column = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell6" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 1" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+column = 5
+letterParent = NodePath("../../..")
+
+[node name="Row 2" type="HBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows" node_paths=PackedStringArray("rowCells")]
+layout_mode = 2
+script = ExtResource("2_oiqdg")
+rowCells = [NodePath("LetterCell"), NodePath("LetterCell2"), NodePath("LetterCell3"), NodePath("LetterCell4"), NodePath("LetterCell5"), NodePath("LetterCell6")]
+
+[node name="LetterCell" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 2" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell2" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 2" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 1
+column = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell3" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 2" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 1
+column = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell4" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 2" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 1
+column = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell5" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 2" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 1
+column = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell6" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 2" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 1
+column = 5
+letterParent = NodePath("../../..")
+
+[node name="Row 3" type="HBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows" node_paths=PackedStringArray("rowCells")]
+layout_mode = 2
+script = ExtResource("2_oiqdg")
+rowCells = [NodePath("LetterCell"), NodePath("LetterCell2"), NodePath("LetterCell3"), NodePath("LetterCell4"), NodePath("LetterCell5"), NodePath("LetterCell6")]
+
+[node name="LetterCell" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 3" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell2" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 3" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 2
+column = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell3" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 3" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 2
+column = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell4" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 3" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 2
+column = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell5" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 3" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 2
+column = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell6" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 3" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 2
+column = 5
+letterParent = NodePath("../../..")
+
+[node name="Row 4" type="HBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows" node_paths=PackedStringArray("rowCells")]
+layout_mode = 2
+script = ExtResource("2_oiqdg")
+rowCells = [NodePath("LetterCell"), NodePath("LetterCell2"), NodePath("LetterCell3"), NodePath("LetterCell4"), NodePath("LetterCell5"), NodePath("LetterCell6")]
+
+[node name="LetterCell" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 4" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell2" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 4" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 3
+column = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell3" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 4" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 3
+column = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell4" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 4" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 3
+column = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell5" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 4" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 3
+column = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell6" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 4" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 3
+column = 5
+letterParent = NodePath("../../..")
+
+[node name="Row 5" type="HBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows" node_paths=PackedStringArray("rowCells")]
+layout_mode = 2
+script = ExtResource("2_oiqdg")
+rowCells = [NodePath("LetterCell"), NodePath("LetterCell2"), NodePath("LetterCell3"), NodePath("LetterCell4"), NodePath("LetterCell5"), NodePath("LetterCell6")]
+
+[node name="LetterCell" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 5" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell2" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 5" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 4
+column = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell3" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 5" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 4
+column = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell4" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 5" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 4
+column = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell5" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 5" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 4
+column = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell6" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 5" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 4
+column = 5
+letterParent = NodePath("../../..")
+
+[node name="Row 6" type="HBoxContainer" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows" node_paths=PackedStringArray("rowCells")]
+layout_mode = 2
+script = ExtResource("2_oiqdg")
+rowCells = [NodePath("LetterCell"), NodePath("LetterCell2"), NodePath("LetterCell3"), NodePath("LetterCell4"), NodePath("LetterCell5"), NodePath("LetterCell6")]
+
+[node name="LetterCell" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 6" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 5
+letterParent = NodePath("../../..")
+
+[node name="LetterCell2" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 6" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 5
+column = 1
+letterParent = NodePath("../../..")
+
+[node name="LetterCell3" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 6" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 5
+column = 2
+letterParent = NodePath("../../..")
+
+[node name="LetterCell4" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 6" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 5
+column = 3
+letterParent = NodePath("../../..")
+
+[node name="LetterCell5" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 6" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 5
+column = 4
+letterParent = NodePath("../../..")
+
+[node name="LetterCell6" parent="ParentContainer/MarginContainer/LettersRegion/Letter Rows/Row 6" node_paths=PackedStringArray("letterParent") instance=ExtResource("2_k6km5")]
+layout_mode = 2
+row = 5
+column = 5
+letterParent = NodePath("../../..")
+
+[node name="Line2D" type="Line2D" parent="ParentContainer/MarginContainer/LettersRegion"]
+
+[node name="WordsList" type="MarginContainer" parent="ParentContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ParentContainer/MarginContainer/WordsList"]
+layout_mode = 2
+
+[node name="WordItem" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
+layout_mode = 2
+
+[node name="WordItem2" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
+layout_mode = 2
+
+[node name="WordItem3" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
+layout_mode = 2
+
+[node name="WordItem4" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
+layout_mode = 2
+
+[node name="WordItem5" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
+layout_mode = 2
+
+[node name="WordItem6" parent="ParentContainer/MarginContainer/WordsList/VBoxContainer" instance=ExtResource("4_4k46b")]
+layout_mode = 2
