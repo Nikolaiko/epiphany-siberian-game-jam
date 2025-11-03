@@ -4,14 +4,16 @@ class_name MainScene
 
 @onready var mainCanvas = $CanvasLayer
 
+var historyScene: StoryScene
+
 func _ready() -> void:
-	pass
+	historyScene = load("res://scenes/history/initial_story.tscn").instantiate()
+	historyScene.callbackFunction = onHistorySceneClosed
+	mainCanvas.add_child(historyScene)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+func onHistorySceneClosed():
+	if (historyScene != null):
+		mainCanvas.remove_child(historyScene)	
 
 func _on_start_letters_game_button_pressed() -> void:
 	var letterGame: LetterGame = load("res://scenes/letters_minigame/letter_mini_game.tscn").instantiate()	

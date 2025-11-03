@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdwtfpct5ksce"]
+
+[ext_resource type="Texture2D" uid="uid://bhc3yfcgb7sl0" path="res://scenes/history/images/i3.jpeg" id="1_a8anq"]
+[ext_resource type="Script" path="res://scenes/history/scripts/history_main_scene.gd" id="1_rjc1r"]
+
+[node name="InitialStory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rjc1r")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ImageContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/ImageContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("1_a8anq")
+stretch_mode = 4
+
+[node name="TextContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="HBoxContainer/TextContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Я сидел вечером в любимой кофейне и пил любимый латте на кокосовом. На завтра мне нужн приготовить доклад по истории. Про Ледовое Побоище. Что может быть проще? Любому здравомыслящему человеку известно, мы победили в это битве, потому что были едины и тупые немцы полезли в тяжелых доспехах на лед. Можно не заморачиваться, завтра с утра быстро пробегусь по музеям понаделаую фоток, натыкаю ссылок на документы и готово..."
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="MarginContainer"]
+layout_mode = 2
+text = "Начнем!"
+
+[connection signal="pressed" from="MarginContainer/Button" to="." method="_on_start_button_pressed"]
