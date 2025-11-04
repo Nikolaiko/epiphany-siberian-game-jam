@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df78py13lj4c0"
-path="res://.godot/imported/man-walking.png-21f4fa88c4810f80d2ffb840dcd6a3c0.ctex"
+uid="uid://c3onkx2h7kqyu"
+path="res://.godot/imported/roguelikeCity_magenta.png-535b7bd7c15f7d81c56b146212f4868c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/walkable_city/sprites/man-walking.png"
-dest_files=["res://.godot/imported/man-walking.png-21f4fa88c4810f80d2ffb840dcd6a3c0.ctex"]
+source_file="res://scenes/walkable_city/sprites/roguelikeCity_magenta.png"
+dest_files=["res://.godot/imported/roguelikeCity_magenta.png-535b7bd7c15f7d81c56b146212f4868c.ctex"]
 
 [params]
 
