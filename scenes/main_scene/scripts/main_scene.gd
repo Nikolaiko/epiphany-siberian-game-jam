@@ -5,6 +5,7 @@ class_name MainScene
 @onready var mainCanvas = $CanvasLayer
 
 var historyScene: StoryScene
+#var cityScene:
 
 func _ready() -> void:
 	historyScene = load("res://scenes/history/initial_story.tscn").instantiate()
@@ -13,7 +14,10 @@ func _ready() -> void:
 
 func onHistorySceneClosed():
 	if (historyScene != null):
-		mainCanvas.remove_child(historyScene)	
+		mainCanvas.remove_child(historyScene)
+	
+	var cityScene = load("res://scenes/walkable_city/City.tscn").instantiate()
+	add_child(cityScene)
 
 func _on_start_letters_game_button_pressed() -> void:
 	var letterGame: LetterGame = load("res://scenes/letters_minigame/letter_mini_game.tscn").instantiate()	
