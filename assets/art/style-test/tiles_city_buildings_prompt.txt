@@ -1,0 +1,15 @@
+Use case: stylized-concept.
+Asset: a modular BUILDING TILE ATLAS for a contemporary small Russian city, retro top-down RPG with front facades visible, orthographic RPG perspective, no isometric diamonds. Intended buildings: student's home, museum, archive, cinema, university. These are modular surfaces and facade details, not miniature complete buildings.
+Output a SQUARE atlas filling the canvas, strict 4 columns by 4 rows of equally sized cells, each cell represents exactly 16x16 native pixels, whole sheet designed for native 64x64. ZERO gaps, ZERO outer margins, NO separator lines. Keep all cell boundaries at exact quarter positions.
+Exact layout left to right:
+Row 1: seamless muted grey slate roof surface; seamless muted terracotta tiled roof surface; repeatable horizontal grey roof eave with beige plaster below; repeatable horizontal terracotta roof eave with muted brick below.
+Row 2: seamless plain warm beige plaster wall; seamless muted red-brown brick wall; one small dark blue-grey window centered in beige plaster with stone sill; one small warm illuminated window centered in brick with stone sill.
+Rows 3 and 4 form FOUR tall facade modules, each one cell wide by TWO cells high (16x32 native), drawn continuously across the row boundary:
+Column 1: closed dark wooden single door in beige plaster, top half in row 3 and threshold/lower half in row 4.
+Column 2: closed dark double glass entrance in muted brick, top half in row 3 and bottom half in row 4.
+Column 3: tall narrow dark window in beige plaster, upper half in row 3 and lower half with sill in row 4.
+Column 4: tall warm-lit window in muted brick, upper half in row 3 and lower half with sill in row 4.
+Each module fills its whole cell area with opaque building material, no transparent background. No frames separating unrelated tiles, no surrounding floor or environment. Doors should be large enough for a 24-pixel-tall player.
+Style: coarse 16x16 retro game pixel art, crisp square pixels, clean large flat color clusters, minimal detail. Warm upper-left lighting using 2-4 discrete shades per material, NO gradients, antialiasing, blur, noisy texture or dithering. Restrained autumn colors, muted beige, brick, grey and brown.
+Use only muted Resurrect 64 colors: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #4c3e24 #313638 #374e4a #323353 #484a77 #9e4539 #cd683d #e6904e #fbb954 #fdcbb0. Dark plum instead of pure black.
+No characters, no complete buildings, no perspective streets, no text, letters, numbers, shop signs, logos, UI, watermarks or labels. Flat tile atlas only.

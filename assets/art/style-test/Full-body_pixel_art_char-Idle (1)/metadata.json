@@ -1,0 +1,55 @@
+{
+  "group_id": "036d82f7-6180-4d4a-bedd-7f63675551b8",
+  "states": [
+    {
+      "character": {
+        "id": "7073c06d-b44e-4b3f-b8ba-862e4eaa19b4",
+        "name": "Idle",
+        "prompt": "Full-body pixel art character of a young male university student, around 20 years old, with a slim build, light warm skin, messy dark brown hair and long uneven bangs. Calm, slightly tired expression. Wearing an oversized muted plum-gray hoodie with the hood down, dark charcoal trousers and simple dark sneakers. Large dark over-ear headphones with subtle purple accents rest around his neck. A charcoal backpack with a small muted red diamond patch is worn over both shoulders.  Standing in a relaxed idle pose, arms at his sides, facing the viewer. Slightly elevated camera angle for a top-down adventure game. Clear silhouette, simplified details readable at a small sprite size. Resurrect 64 palette, muted colors, one-pixel dark outline in #2e222f, light from the upper left, compact pixel clusters, crisp edges. Transparent background. Single character, no scenery, no furniture, no laptop, no text, no blur or anti-aliasing.",
+        "size": {
+          "width": 32,
+          "height": 32
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "high top-down",
+        "created_at": "2026-10-31T04:00:45.989672+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "Walking": {
+            "south": [
+              "Idle/animations/Walking/south/frame_000.png",
+              "Idle/animations/Walking/south/frame_001.png",
+              "Idle/animations/Walking/south/frame_002.png",
+              "Idle/animations/Walking/south/frame_003.png",
+              "Idle/animations/Walking/south/frame_004.png",
+              "Idle/animations/Walking/south/frame_005.png"
+            ],
+            "north": [
+              "Idle/animations/Walking/north/frame_000.png",
+              "Idle/animations/Walking/north/frame_001.png",
+              "Idle/animations/Walking/north/frame_002.png",
+              "Idle/animations/Walking/north/frame_003.png",
+              "Idle/animations/Walking/north/frame_004.png",
+              "Idle/animations/Walking/north/frame_005.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-10-31T04:11:09.035538"
+}
