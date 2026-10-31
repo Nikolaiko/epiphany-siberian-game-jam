@@ -1,0 +1,17 @@
+Create a cohesive modular pixel-art tileset for a contemporary Russian city in autumn, for a top-down narrative adventure game.
+
+Visual direction: match the cozy rainy-evening atmosphere of the supplied cafe reference. Use cool muted purple-gray streets, warm brick and beige facades, dark wooden details, amber-lit windows and street lamps, and rusty orange, ochre and olive foliage. Convey a quiet, slightly melancholic university neighborhood after rain.
+
+Camera and scale: orthographic high top-down RPG view, with visible building fronts and upper surfaces, matching the supplied student sprite. No isometric diamond grid, horizon or vanishing points. Use a strict 16x16-pixel tile grid. The student occupies a 32x32 frame and is approximately 24-28 pixels tall; scale doors, benches, lamps and trees accordingly. Larger objects may span multiple grid cells. Keep the same native pixel size throughout.
+
+Include these coordinated tile groups:
+
+GROUND: seamless dark asphalt, beige-gray sidewalk paving, muted olive grass and brown earth. Include straight edges, inner and outer corners, and transitions between sidewalk, road and grass. Add a few matching variants with sparse fallen leaves or shallow puddles. Keep walkable surfaces visually quiet and readable beneath the dark plum-gray student.
+
+BUILDINGS: repeatable brick and plaster walls, slate and muted terracotta roofs, roof edges and corners, foundations, windows with both dark and warm-lit variants, and entrances. Doors should span two tiles vertically. Provide modular pieces suitable for an apartment building, museum, archive, neighborhood cinema and university. Leave signboards and poster panels blank.
+
+STREET AND PARK OBJECTS: autumn deciduous trees, low shrubs, warm-lit street lamps, wooden benches and litter bins. Objects must fit whole multiples of the 16x16 grid, with their bases aligned consistently. Include a separate 32x48-pixel statue of Alexander Nevsky on a pedestal for the town square.
+
+Style rules: use only the Resurrect 64 palette. Shade with compact, deliberate pixel clusters and a few discrete tones per material. Light comes from the upper left. Use one-pixel dark-plum outlines (#2e222f) on freestanding objects; do not outline individual ground tiles. Keep repeating edges seamless and all modules aligned. Ground and wall tiles are opaque; isolated props have transparent backgrounds.
+
+Deliver reusable tiles and separate objects, not a composed city illustration. No characters, text, letters, numbers, logos, visible grid lines or decorative frames. No blur, anti-aliasing, smooth gradients, photorealistic textures or noisy dithering. Suggest wet surfaces with sparse hard-edged highlights; do not bake rain streaks, fog or broad lighting effects into the tiles.
