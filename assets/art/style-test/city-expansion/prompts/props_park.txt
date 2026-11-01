@@ -1,0 +1,17 @@
+Use case: stylized-concept.
+Asset type: additional pixel-art city tiles for an existing narrative RPG.
+Input images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.
+Match this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.
+Projection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.
+Crisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.
+Transparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.
+Create ONE transparent PROP SPRITE SHEET, arranged as an exact regular grid of FOUR COLUMNS and TWO ROWS, eight separate cells. NO visible grid, labels or cell backgrounds. Every object isolated and centered wholly inside its cell with at least 12% clear margin on all sides, never crossing cell boundaries. Eight objects in exact reading order left to right, top row then bottom row:
+1. slender tall birch tree, white-grey trunk with dark marks, light sparse muted ochre autumn canopy in large coherent clusters. Intended native canvas 64x96px.
+2. leafless deciduous tree with clear graceful branches, dark brown trunk, a few rusty leaves, whole silhouette. Intended native canvas 64x80px.
+3. tall pine or fir tree with broad layered dark muted olive-green branches, natural asymmetry. Intended native canvas 64x96px.
+4. round irregular low olive-brown autumn shrub with a few rusty leaves. Intended native canvas 32x32px.
+5. short wide hedge segment, muted olive foliage in broad coherent masses, no random leaf noise. Intended native canvas 48x32px.
+6. square beige stone street planter with sparse dry autumn grasses rising from it. Intended native canvas 32x32px.
+7. small flat irregular pile of ochre and terracotta fallen leaves, sparse clusters, no opaque ground patch. Intended native canvas 32x16px.
+8. low broad weathered grey stone with 3-4 flat shaded planes, simple readable silhouette. Intended native canvas 32x16px.
+Keep the same pixel craftsmanship, subdued daytime colors and 3/4 RPG view as the approved building references. These are world objects, not UI icons. No scenery, common floor, grouping/overlap, glow or characters. Thin dark-plum silhouette contours only, no heavy black borders.

@@ -1,0 +1,583 @@
+{
+  "assets": [
+    {
+      "anchor": [
+        128,
+        192
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 192,
+      "name": "building_apartments",
+      "path": "buildings/building_apartments.png",
+      "region": [
+        0,
+        0,
+        256,
+        192
+      ],
+      "source": "sources/building_apartments_source.png",
+      "width": 256
+    },
+    {
+      "anchor": [
+        64,
+        96
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 96,
+      "name": "building_timber_house",
+      "path": "buildings/building_timber_house.png",
+      "region": [
+        320,
+        96,
+        128,
+        96
+      ],
+      "source": "sources/building_timber_house_source.png",
+      "width": 128
+    },
+    {
+      "anchor": [
+        88,
+        128
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 128,
+      "name": "building_workshop",
+      "path": "buildings/building_workshop.png",
+      "region": [
+        544,
+        64,
+        176,
+        128
+      ],
+      "source": "sources/building_workshop_source.png",
+      "width": 176
+    },
+    {
+      "anchor": [
+        80,
+        128
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 128,
+      "name": "building_neighborhood_shop",
+      "path": "buildings/building_neighborhood_shop.png",
+      "region": [
+        816,
+        64,
+        160,
+        128
+      ],
+      "source": "sources/building_neighborhood_shop_source.png",
+      "width": 160
+    },
+    {
+      "anchor": [
+        96,
+        80
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 80,
+      "name": "building_garages",
+      "path": "buildings/building_garages.png",
+      "region": [
+        32,
+        304,
+        192,
+        80
+      ],
+      "source": "sources/building_garages_source.png",
+      "width": 192
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 80,
+      "name": "building_kiosk",
+      "path": "buildings/building_kiosk.png",
+      "region": [
+        352,
+        304,
+        64,
+        80
+      ],
+      "source": "sources/building_kiosk_source.png",
+      "width": 64
+    },
+    {
+      "anchor": [
+        64,
+        160
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 160,
+      "name": "building_townhouse",
+      "path": "buildings/building_townhouse.png",
+      "region": [
+        576,
+        224,
+        128,
+        160
+      ],
+      "source": "sources/building_townhouse_source.png",
+      "width": 128
+    },
+    {
+      "anchor": [
+        48,
+        96
+      ],
+      "atlas": "atlases/buildings.png",
+      "height": 96,
+      "name": "building_service_house",
+      "path": "buildings/building_service_house.png",
+      "region": [
+        848,
+        288,
+        96,
+        96
+      ],
+      "source": "sources/building_service_house_source.png",
+      "width": 96
+    },
+    {
+      "anchor": [
+        40,
+        48
+      ],
+      "atlas": "atlases/props.png",
+      "height": 48,
+      "name": "bus_shelter",
+      "path": "props/bus_shelter.png",
+      "region": [
+        0,
+        48,
+        80,
+        48
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 80
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "bicycle",
+      "path": "props/bicycle.png",
+      "region": [
+        112,
+        64,
+        48,
+        32
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "bench_backrest",
+      "path": "props/bench_backrest.png",
+      "region": [
+        208,
+        64,
+        48,
+        32
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        8,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "litter_bin_square",
+      "path": "props/litter_bin_square.png",
+      "region": [
+        320,
+        64,
+        16,
+        32
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 16
+    },
+    {
+      "anchor": [
+        8,
+        16
+      ],
+      "atlas": "atlases/props.png",
+      "height": 16,
+      "name": "bollard",
+      "path": "props/bollard.png",
+      "region": [
+        416,
+        80,
+        16,
+        16
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 16
+    },
+    {
+      "anchor": [
+        8,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "mailbox",
+      "path": "props/mailbox.png",
+      "region": [
+        512,
+        64,
+        16,
+        32
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 16
+    },
+    {
+      "anchor": [
+        8,
+        48
+      ],
+      "atlas": "atlases/props.png",
+      "height": 48,
+      "name": "bus_stop_pole",
+      "path": "props/bus_stop_pole.png",
+      "region": [
+        608,
+        48,
+        16,
+        48
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 16
+    },
+    {
+      "anchor": [
+        16,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "utility_cabinet",
+      "path": "props/utility_cabinet.png",
+      "region": [
+        704,
+        64,
+        32,
+        32
+      ],
+      "source": "sources/props_street_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        32,
+        96
+      ],
+      "atlas": "atlases/props.png",
+      "height": 96,
+      "name": "birch_tree",
+      "path": "props/birch_tree.png",
+      "region": [
+        16,
+        96,
+        64,
+        96
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 64
+    },
+    {
+      "anchor": [
+        32,
+        80
+      ],
+      "atlas": "atlases/props.png",
+      "height": 80,
+      "name": "bare_tree",
+      "path": "props/bare_tree.png",
+      "region": [
+        112,
+        112,
+        64,
+        80
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 64
+    },
+    {
+      "anchor": [
+        32,
+        96
+      ],
+      "atlas": "atlases/props.png",
+      "height": 96,
+      "name": "fir_tree",
+      "path": "props/fir_tree.png",
+      "region": [
+        208,
+        96,
+        64,
+        96
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 64
+    },
+    {
+      "anchor": [
+        16,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "round_shrub",
+      "path": "props/round_shrub.png",
+      "region": [
+        320,
+        160,
+        32,
+        32
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "hedge",
+      "path": "props/hedge.png",
+      "region": [
+        400,
+        160,
+        48,
+        32
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        16,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "stone_planter",
+      "path": "props/stone_planter.png",
+      "region": [
+        512,
+        160,
+        32,
+        32
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        16,
+        16
+      ],
+      "atlas": "atlases/props.png",
+      "height": 16,
+      "name": "fallen_leaves",
+      "path": "props/fallen_leaves.png",
+      "region": [
+        608,
+        176,
+        32,
+        16
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        16,
+        16
+      ],
+      "atlas": "atlases/props.png",
+      "height": 16,
+      "name": "boulder",
+      "path": "props/boulder.png",
+      "region": [
+        704,
+        176,
+        32,
+        16
+      ],
+      "source": "sources/props_park_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "wood_fence",
+      "path": "props/wood_fence.png",
+      "region": [
+        16,
+        256,
+        48,
+        32
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "iron_fence",
+      "path": "props/iron_fence.png",
+      "region": [
+        112,
+        256,
+        48,
+        32
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "brick_wall",
+      "path": "props/brick_wall.png",
+      "region": [
+        208,
+        256,
+        48,
+        32
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        24,
+        48
+      ],
+      "atlas": "atlases/props.png",
+      "height": 48,
+      "name": "iron_gate",
+      "path": "props/iron_gate.png",
+      "region": [
+        304,
+        240,
+        48,
+        48
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        24,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "dumpster",
+      "path": "props/dumpster.png",
+      "region": [
+        400,
+        256,
+        48,
+        32
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 48
+    },
+    {
+      "anchor": [
+        16,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "wood_crates",
+      "path": "props/wood_crates.png",
+      "region": [
+        512,
+        256,
+        32,
+        32
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        16,
+        16
+      ],
+      "atlas": "atlases/props.png",
+      "height": 16,
+      "name": "pallets",
+      "path": "props/pallets.png",
+      "region": [
+        608,
+        272,
+        32,
+        16
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 32
+    },
+    {
+      "anchor": [
+        8,
+        32
+      ],
+      "atlas": "atlases/props.png",
+      "height": 32,
+      "name": "barrel",
+      "path": "props/barrel.png",
+      "region": [
+        704,
+        256,
+        16,
+        32
+      ],
+      "source": "sources/props_courtyard_source.png",
+      "width": 16
+    }
+  ],
+  "filter": "nearest",
+  "palette": "Resurrect 64",
+  "tile_size": 16
+}

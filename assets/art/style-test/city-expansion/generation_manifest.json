@@ -1,0 +1,230 @@
+{
+  "jobs": [
+    {
+      "name": "building_apartments",
+      "kind": "building",
+      "width": 256,
+      "height": 192,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone modest THREE-STORY apartment block, wide silhouette, weathered warm grey/taupe plaster, a broad low slate hipped roof, two restrained chimneys, a pair of slightly projecting balconies and a recessed central entry. Rectangular blue-grey windows, varied curtains without glow; a dark brick base. Contemporary older residential block, not palace. A few subtle rain marks, no foliage carpet, no all-over speckles. Native 256x192, broad 4:3 aspect, full building fills most canvas. Door 16x32 native. Roof roughly upper 30%; street facade lower 70%.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_timber_house",
+      "kind": "building",
+      "width": 128,
+      "height": 96,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone small ONE-STORY urban timber house, horizontal warm dark brown wood cladding in broad bands, three windows with restrained carved beige wooden frames, small entry porch on right, low muted grey pitched roof and single brick chimney. A believable older Siberian neighborhood house, not fantasy log cabin. Native 128x96, 4:3 aspect. Door 16x32 native. Full roof visible, no yard or trees.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_workshop",
+      "kind": "building",
+      "width": 176,
+      "height": 128,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone TWO-STORY old red-brown brick workshop, low broad slate roof with a short square ventilation stack, tall blue-grey windowpanes on upper storey, wide closed double wooden service doors and one narrow personnel door below. Asymmetrical authentic utility building, simple broad masonry shapes, sparse brick accents only, no repeated checker pattern. Native 176x128, aspect 11:8. Fully visible front-facing roof, no tools or ground outside.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_neighborhood_shop",
+      "kind": "building",
+      "width": 160,
+      "height": 128,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone TWO-STORY neighborhood shop building, broad warm beige plaster upper floor with three domestic windows, dark wooden storefront below with two wide glass display windows and a recessed door between them, faded taupe canvas awning, simple grey roof. Window contents abstract quiet shapes, no text. No glowing windows. Native 160x128, 5:4. Distinct facade, no trees or parked objects.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_garages",
+      "kind": "building",
+      "width": 192,
+      "height": 80,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone ONE-STORY connected row of THREE garages, broad low brick structure, muted slate roof seen from above, three different closed metal garage doors (grey-plum, muted brown, grey-blue), small restrained roof seams. No door numbers, no signs, no cars. Native 192x80, very wide aspect 12:5. Each garage doorway roughly 48 native pixels wide. Simple utilitarian quiet facade, whole roof visible.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_kiosk",
+      "kind": "building",
+      "width": 64,
+      "height": 80,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone compact street kiosk, low taupe metal pavilion with a slightly projecting dark plum hipped roof, a wide closed glass counter window with an empty narrow display shelf, a closed wood side panel, subtle base plinth. No signs or text, no people, no items outside. Native 64x80, tall aspect 4:5. Small street kiosk at student scale, about 2.5 student heights. Distinct useful street-filler building.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_townhouse",
+      "kind": "building",
+      "width": 128,
+      "height": 160,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone narrow THREE-STORY urban townhouse, muted warm grey plaster, dark red-brown brick lower floor, slim entry recessed on left, restrained central bay window over two floors, small dark slate mansard roof. Slightly irregular window arrangement, a slim drainpipe. No excessive ornament, no ivy. Native 128x160, tall 4:5. Door 16x32 native, three habitable storeys, full roof visible.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "building_service_house",
+      "kind": "building",
+      "width": 96,
+      "height": 96,
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nSubject: One whole standalone compact ONE-STORY municipal service house, chunky warm grey brick walls, slate gabled roof, central closed dull purple-grey double metal door, two small horizontal frosted windows high on wall, a short vent. No warning labels, symbols, signs or text. Native 96x96 square. Simple city courtyard utility building, whole roof and base visible.\nComposition: one isolated complete building ONLY, centered and tightly framed with a small clear transparent margin; threshold at base. Do not include other buildings."
+    },
+    {
+      "name": "props_street",
+      "kind": "props",
+      "items": [
+        {
+          "name": "bus_shelter",
+          "width": 80,
+          "height": 48,
+          "description": "small bus shelter: simple dark metal frame, slate flat canopy, blue-grey glass rear panel and wooden bench inside; open front, no ads"
+        },
+        {
+          "name": "bicycle",
+          "width": 48,
+          "height": 32,
+          "description": "one dark muted brown city bicycle viewed from the SIDE, two wheels, handlebars and saddle, no rider"
+        },
+        {
+          "name": "bench_backrest",
+          "width": 48,
+          "height": 32,
+          "description": "wooden park bench with curved dark metal legs and a backrest, front-facing like existing cafe wood"
+        },
+        {
+          "name": "litter_bin_square",
+          "width": 16,
+          "height": 32,
+          "description": "simple square metal litter bin, dark plum metal, opening at top"
+        },
+        {
+          "name": "bollard",
+          "width": 16,
+          "height": 16,
+          "description": "single short squat iron bollard with rounded top, dark metal"
+        },
+        {
+          "name": "mailbox",
+          "width": 16,
+          "height": 32,
+          "description": "single modest freestanding grey-blue mailbox on short post, plain closed front, no emblem"
+        },
+        {
+          "name": "bus_stop_pole",
+          "width": 16,
+          "height": 48,
+          "description": "slender bus stop pole with blank rectangular taupe plaque at top, no text or pictograms"
+        },
+        {
+          "name": "utility_cabinet",
+          "width": 32,
+          "height": 32,
+          "description": "plain waist-high grey metal electrical cabinet with two closed panels, no warning signs"
+        }
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nCreate ONE transparent PROP SPRITE SHEET, arranged as an exact regular grid of FOUR COLUMNS and TWO ROWS, eight separate cells. NO visible grid, labels or cell backgrounds. Every object isolated and centered wholly inside its cell with at least 12% clear margin on all sides, never crossing cell boundaries. Eight objects in exact reading order left to right, top row then bottom row:\n1. small bus shelter: simple dark metal frame, slate flat canopy, blue-grey glass rear panel and wooden bench inside; open front, no ads. Intended native canvas 80x48px.\n2. one dark muted brown city bicycle viewed from the SIDE, two wheels, handlebars and saddle, no rider. Intended native canvas 48x32px.\n3. wooden park bench with curved dark metal legs and a backrest, front-facing like existing cafe wood. Intended native canvas 48x32px.\n4. simple square metal litter bin, dark plum metal, opening at top. Intended native canvas 16x32px.\n5. single short squat iron bollard with rounded top, dark metal. Intended native canvas 16x16px.\n6. single modest freestanding grey-blue mailbox on short post, plain closed front, no emblem. Intended native canvas 16x32px.\n7. slender bus stop pole with blank rectangular taupe plaque at top, no text or pictograms. Intended native canvas 16x48px.\n8. plain waist-high grey metal electrical cabinet with two closed panels, no warning signs. Intended native canvas 32x32px.\nKeep the same pixel craftsmanship, subdued daytime colors and 3/4 RPG view as the approved building references. These are world objects, not UI icons. No scenery, common floor, grouping/overlap, glow or characters. Thin dark-plum silhouette contours only, no heavy black borders."
+    },
+    {
+      "name": "props_park",
+      "kind": "props",
+      "items": [
+        {
+          "name": "birch_tree",
+          "width": 64,
+          "height": 96,
+          "description": "slender tall birch tree, white-grey trunk with dark marks, light sparse muted ochre autumn canopy in large coherent clusters"
+        },
+        {
+          "name": "bare_tree",
+          "width": 64,
+          "height": 80,
+          "description": "leafless deciduous tree with clear graceful branches, dark brown trunk, a few rusty leaves, whole silhouette"
+        },
+        {
+          "name": "fir_tree",
+          "width": 64,
+          "height": 96,
+          "description": "tall pine or fir tree with broad layered dark muted olive-green branches, natural asymmetry"
+        },
+        {
+          "name": "round_shrub",
+          "width": 32,
+          "height": 32,
+          "description": "round irregular low olive-brown autumn shrub with a few rusty leaves"
+        },
+        {
+          "name": "hedge",
+          "width": 48,
+          "height": 32,
+          "description": "short wide hedge segment, muted olive foliage in broad coherent masses, no random leaf noise"
+        },
+        {
+          "name": "stone_planter",
+          "width": 32,
+          "height": 32,
+          "description": "square beige stone street planter with sparse dry autumn grasses rising from it"
+        },
+        {
+          "name": "fallen_leaves",
+          "width": 32,
+          "height": 16,
+          "description": "small flat irregular pile of ochre and terracotta fallen leaves, sparse clusters, no opaque ground patch"
+        },
+        {
+          "name": "boulder",
+          "width": 32,
+          "height": 16,
+          "description": "low broad weathered grey stone with 3-4 flat shaded planes, simple readable silhouette"
+        }
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nCreate ONE transparent PROP SPRITE SHEET, arranged as an exact regular grid of FOUR COLUMNS and TWO ROWS, eight separate cells. NO visible grid, labels or cell backgrounds. Every object isolated and centered wholly inside its cell with at least 12% clear margin on all sides, never crossing cell boundaries. Eight objects in exact reading order left to right, top row then bottom row:\n1. slender tall birch tree, white-grey trunk with dark marks, light sparse muted ochre autumn canopy in large coherent clusters. Intended native canvas 64x96px.\n2. leafless deciduous tree with clear graceful branches, dark brown trunk, a few rusty leaves, whole silhouette. Intended native canvas 64x80px.\n3. tall pine or fir tree with broad layered dark muted olive-green branches, natural asymmetry. Intended native canvas 64x96px.\n4. round irregular low olive-brown autumn shrub with a few rusty leaves. Intended native canvas 32x32px.\n5. short wide hedge segment, muted olive foliage in broad coherent masses, no random leaf noise. Intended native canvas 48x32px.\n6. square beige stone street planter with sparse dry autumn grasses rising from it. Intended native canvas 32x32px.\n7. small flat irregular pile of ochre and terracotta fallen leaves, sparse clusters, no opaque ground patch. Intended native canvas 32x16px.\n8. low broad weathered grey stone with 3-4 flat shaded planes, simple readable silhouette. Intended native canvas 32x16px.\nKeep the same pixel craftsmanship, subdued daytime colors and 3/4 RPG view as the approved building references. These are world objects, not UI icons. No scenery, common floor, grouping/overlap, glow or characters. Thin dark-plum silhouette contours only, no heavy black borders."
+    },
+    {
+      "name": "props_courtyard",
+      "kind": "props",
+      "items": [
+        {
+          "name": "wood_fence",
+          "width": 48,
+          "height": 32,
+          "description": "single horizontal section of weathered brown wooden fence, two end posts, five broad slats, front-facing"
+        },
+        {
+          "name": "iron_fence",
+          "width": 48,
+          "height": 32,
+          "description": "single horizontal section of dark iron rail fence, two end posts, simple vertical rods, front-facing"
+        },
+        {
+          "name": "brick_wall",
+          "width": 48,
+          "height": 32,
+          "description": "single low warm muted brick garden wall section with grey stone coping, sparse brick marks"
+        },
+        {
+          "name": "iron_gate",
+          "width": 48,
+          "height": 48,
+          "description": "closed two-leaf iron courtyard gate between two short narrow brick piers, front-facing, no arch or letters"
+        },
+        {
+          "name": "dumpster",
+          "width": 48,
+          "height": 32,
+          "description": "closed green-grey wheeled rubbish dumpster, plain lid, quiet flat surfaces, no symbols"
+        },
+        {
+          "name": "wood_crates",
+          "width": 32,
+          "height": 32,
+          "description": "small stack of two plain brown wooden delivery crates, restrained plank seams"
+        },
+        {
+          "name": "pallets",
+          "width": 32,
+          "height": 16,
+          "description": "low stack of two weathered timber pallets, top surface visible, broad planks"
+        },
+        {
+          "name": "barrel",
+          "width": 16,
+          "height": 32,
+          "description": "single dull rusty-brown cylindrical metal barrel, closed top, two metal bands, no labels"
+        }
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: additional pixel-art city tiles for an existing narrative RPG.\nInput images: 1 approved city house, 2 approved cafe exterior, 3 actual student sprite atlas. These are STYLE / PROJECTION / SCALE references, not edit targets. Create a new matching asset.\nMatch this established world: contemporary Russian university neighborhood with modest older buildings, quiet autumn atmosphere. Warm taupe plaster, muted red-brown brick, dark wood, slate and plum-grey shadows. Soft overcast DAYLIGHT from upper left. No evening tint or emitted window/lamp light.\nProjection: orthographic front-facing 3/4 top-down RPG. Front faces down-screen; roof planes visible. Horizontal cornices stay horizontal and verticals vertical; no rotated isometric view, vanishing point or horizon. Student is 24-28px tall on a 32px frame; normal door about 16x32 native pixels.\nCrisp authored PIXEL ART with coherent flat pixel clusters, restrained sparse wear, readable silhouettes at small native size. Quiet broad surfaces and local details near openings. Hard square edges, no gradients, smoothing, blur, dithering, photo texture or repetitive pixel noise. Palette from Resurrect64: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #4c3e24 #9e4539 #cd683d #e6904e #676633 #374e4a #547e64 #92a984 #fdcbb0. Use muted midtones; no pure black, neon or saturated orange washes.\nTransparent background, no ground patch, no detached cast shadows, no sky or scenery. Fully contain every silhouette, no cropped roof or feet. No characters. Absolutely no text, letters, numerals, symbols that look like text, logos, watermarks, captions or UI; any plaques remain blank.\nCreate ONE transparent PROP SPRITE SHEET, arranged as an exact regular grid of FOUR COLUMNS and TWO ROWS, eight separate cells. NO visible grid, labels or cell backgrounds. Every object isolated and centered wholly inside its cell with at least 12% clear margin on all sides, never crossing cell boundaries. Eight objects in exact reading order left to right, top row then bottom row:\n1. single horizontal section of weathered brown wooden fence, two end posts, five broad slats, front-facing. Intended native canvas 48x32px.\n2. single horizontal section of dark iron rail fence, two end posts, simple vertical rods, front-facing. Intended native canvas 48x32px.\n3. single low warm muted brick garden wall section with grey stone coping, sparse brick marks. Intended native canvas 48x32px.\n4. closed two-leaf iron courtyard gate between two short narrow brick piers, front-facing, no arch or letters. Intended native canvas 48x48px.\n5. closed green-grey wheeled rubbish dumpster, plain lid, quiet flat surfaces, no symbols. Intended native canvas 48x32px.\n6. small stack of two plain brown wooden delivery crates, restrained plank seams. Intended native canvas 32x32px.\n7. low stack of two weathered timber pallets, top surface visible, broad planks. Intended native canvas 32x16px.\n8. single dull rusty-brown cylindrical metal barrel, closed top, two metal bands, no labels. Intended native canvas 16x32px.\nKeep the same pixel craftsmanship, subdued daytime colors and 3/4 RPG view as the approved building references. These are world objects, not UI icons. No scenery, common floor, grouping/overlap, glow or characters. Thin dark-plum silhouette contours only, no heavy black borders."
+    }
+  ],
+  "refs": [
+    "assets/art/style-test/city-v2/home.png",
+    "assets/art/style-test/city-v2/cafe.png",
+    "assets/art/style-test/char_student_atlas.png"
+  ]
+}

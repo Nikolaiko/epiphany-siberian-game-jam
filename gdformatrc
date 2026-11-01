@@ -1,0 +1,6 @@
+line_length: 100
+
+excluded_directories:
+  - .git
+  - .godot
+  - web_version
