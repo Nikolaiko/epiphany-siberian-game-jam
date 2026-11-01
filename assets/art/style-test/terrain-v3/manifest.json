@@ -1,0 +1,278 @@
+{
+  "atlas": "terrain.png",
+  "size": [
+    64,
+    96
+  ],
+  "tile_size": [
+    16,
+    16
+  ],
+  "source_id": 0,
+  "tiles": [
+    {
+      "name": "asphalt",
+      "atlas_coords": [
+        0,
+        0
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "asphalt_patch",
+      "atlas_coords": [
+        1,
+        0
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "paving",
+      "atlas_coords": [
+        2,
+        0
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "paving_leaves",
+      "atlas_coords": [
+        3,
+        0
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "grass",
+      "atlas_coords": [
+        0,
+        1
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "grass_leaves",
+      "atlas_coords": [
+        1,
+        1
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "earth",
+      "atlas_coords": [
+        2,
+        1
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "earth_grass",
+      "atlas_coords": [
+        3,
+        1
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "marking_vertical",
+      "atlas_coords": [
+        0,
+        2
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "marking_horizontal",
+      "atlas_coords": [
+        1,
+        2
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "crosswalk_vertical_bars",
+      "atlas_coords": [
+        2,
+        2
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "crosswalk_horizontal_bars",
+      "atlas_coords": [
+        3,
+        2
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "curb_paving_top",
+      "atlas_coords": [
+        0,
+        3
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "curb_paving_right",
+      "atlas_coords": [
+        1,
+        3
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "curb_paving_bottom",
+      "atlas_coords": [
+        2,
+        3
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "curb_paving_left",
+      "atlas_coords": [
+        3,
+        3
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "convex_top_left",
+      "atlas_coords": [
+        0,
+        4
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "convex_top_right",
+      "atlas_coords": [
+        1,
+        4
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "convex_bottom_right",
+      "atlas_coords": [
+        2,
+        4
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "convex_bottom_left",
+      "atlas_coords": [
+        3,
+        4
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "concave_road_bottom_right",
+      "atlas_coords": [
+        0,
+        5
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "concave_road_bottom_left",
+      "atlas_coords": [
+        1,
+        5
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "concave_road_top_left",
+      "atlas_coords": [
+        2,
+        5
+      ],
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "concave_road_top_right",
+      "atlas_coords": [
+        3,
+        5
+      ],
+      "size": [
+        16,
+        16
+      ]
+    }
+  ]
+}

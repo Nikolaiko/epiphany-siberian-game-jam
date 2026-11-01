@@ -1,11 +1,10 @@
+class_name WordItem
 extends Control
 
-class_name WordItem
+
+func set_word(new_word: String):
+	get_node("TextEdit").text = new_word
 
 
-func setWord(newWord: String):
-	get_node("TextEdit").text = newWord
-
-
-func getWord() -> String:
+func get_word() -> String:
 	return get_node("TextEdit").text

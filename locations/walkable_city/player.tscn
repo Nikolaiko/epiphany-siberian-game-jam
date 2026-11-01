@@ -149,8 +149,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nn560"]
-radius = 5.0
-height = 12.0
+radius = 11.0
+height = 36.0
 
 [node name="Player" type="CharacterBody2D" unique_id=2006584231]
 collision_layer = 2
@@ -165,5 +165,5 @@ animation = &"idle_down"
 offset = Vector2(0, -16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=428220009]
-position = Vector2(0, -6)
+position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_nn560")

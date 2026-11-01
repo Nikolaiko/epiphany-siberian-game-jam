@@ -1,0 +1,5 @@
+terrain.png: 64x96, 14 colors, exact Resurrect 64, opaque
+terrain_preview_8x.png: 512x768, 14 colors, exact Resurrect 64, opaque
+street_preview.png: 640x360, 30 colors, exact Resurrect 64, opaque
+street_preview_2x.png: 1280x720, 30 colors, exact Resurrect 64, opaque
+Godot: TileSet loaded, source 0, 24 tiles of 16x16.

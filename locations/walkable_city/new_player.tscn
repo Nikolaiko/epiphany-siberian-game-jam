@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://lixgy1b8d2pa"]
+
+[ext_resource type="Texture2D" uid="uid://ov650qphy045" path="res://assets/art/animations/Walking/east/frame_000.png" id="1_2gm7f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3a52l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2gm7f")
+}],
+"loop": 1,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"idle_left",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"idle_right",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"idle_up",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r8f2i"]
+
+[node name="NewPlayer" type="CharacterBody2D" unique_id=2071323151]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=998243343]
+sprite_frames = SubResource("SpriteFrames_3a52l")
+animation = &"idle_down"
+frame_progress = 0.40071037
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1587657710]
+shape = SubResource("CapsuleShape2D_r8f2i")

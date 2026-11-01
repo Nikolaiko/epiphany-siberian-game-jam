@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 200  # How fast the player will move (pixels/sec).
-@export var movement_bounds: Rect2 = Rect2()
+@export var speed = 200
 var facing := "down"
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
@@ -34,8 +33,3 @@ func _physics_process(_delta: float) -> void:
 	animated_sprite.play(animation_name)
 
 	move_and_slide()
-	# The character's origin is at its feet, at the bottom center of a 32x32 frame.
-	var bounds := movement_bounds
-	if not bounds.has_area():
-		bounds = Rect2(Vector2.ZERO, get_viewport_rect().size)
-	position = position.clamp(bounds.position + Vector2(16, 32), bounds.end - Vector2(16, 0))

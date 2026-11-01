@@ -1,44 +1,35 @@
-extends Node
-
 class_name LetterCell
+extends Node
 
 @export var row: int = 0
 @export var column: int = 0
-@export var letterParent: LetterParent
-
-@onready var letterElement: Button = $LetterButton
+@export var letter_parent: LetterParent
 
 var letter: String
 
-
-func _ready() -> void:
-	pass  # Replace with function body.
+@onready var letter_element: Button = $LetterButton
 
 
-func _process(delta: float) -> void:
-	pass
+func set_letter(new_letter: String):
+	letter = new_letter
+	letter_element.text = letter
 
 
-func setLetter(newLetter: String):
-	letter = newLetter
-	letterElement.text = letter
-
-
-func getLetter() -> String:
+func get_letter() -> String:
 	return letter
 
 
 func _on_letter_button_button_down() -> void:
-	letterParent.onLetterPressed(row, column)
+	letter_parent.on_letter_pressed(row, column)
 
 
 func _on_letter_button_mouse_entered() -> void:
-	letterParent.onLetterHoverOn(row, column)
+	letter_parent.on_letter_hover_on(row, column)
 
 
 func _on_letter_button_mouse_exited() -> void:
-	letterParent.onLetterHoverOut(row, column)
+	letter_parent.on_letter_hover_out(row, column)
 
 
 func _on_letter_button_button_up() -> void:
-	letterParent.onLetterReleased()
+	letter_parent.on_letter_released()

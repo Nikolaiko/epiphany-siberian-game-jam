@@ -1,89 +1,88 @@
-extends LetterParent
-
 class_name LettersRegion
+extends LetterParent
 
 @export var rows: Array[CellsRow]
 @export var words: Array[WordItem]
 
-@onready var lineBetweenLetters: Line2D = $Line2D
-
-var levelWords: Array[String] = ["горох", "огород", "массив", "город", "космос", "огурец"]
+var level_words: Array[String] = ["горох", "огород", "массив", "город", "космос", "огурец"]
 
 var dragging = false
 
-var nullVector: Vector2 = Vector2(-100, -100)
-var startDraggingPosition: Vector2 = nullVector
-var endDraggingPosition: Vector2 = nullVector
+var null_vector: Vector2 = Vector2(-100, -100)
+var start_dragging_position: Vector2 = null_vector
+var end_dragging_position: Vector2 = null_vector
+
+@onready var line_between_letters: Line2D = $Line2D
 
 
 func _ready() -> void:
-	lineBetweenLetters.visible = false
+	line_between_letters.visible = false
 
 
-func onLetterPressed(row: int, column: int):
-	lineBetweenLetters.add_point(get_local_mouse_position())
-	lineBetweenLetters.add_point(get_local_mouse_position())
-	lineBetweenLetters.visible = true
+func on_letter_pressed(row: int, column: int):
+	line_between_letters.add_point(get_local_mouse_position())
+	line_between_letters.add_point(get_local_mouse_position())
+	line_between_letters.visible = true
 
-	startDraggingPosition = Vector2(row, column)
+	start_dragging_position = Vector2(row, column)
 	dragging = true
 
 
-func onLetterReleased():
+func on_letter_released():
 	dragging = false
 
-	lineBetweenLetters.clear_points()
-	lineBetweenLetters.visible = false
+	line_between_letters.clear_points()
+	line_between_letters.visible = false
 
-	var selectedWord = checkLineCoordinates()
-	var index = levelWords.find(selectedWord)
+	var selected_word = check_line_coordinates()
+	var index = level_words.find(selected_word)
 	if index != -1:
-		levelWords.remove_at(index)
+		level_words.remove_at(index)
 		for i in range(words.size()):
-			if words[i].getWord() == selectedWord:
-				words[i].setWord("")
+			if words[i].get_word() == selected_word:
+				words[i].set_word("")
 
 
-func onLetterHoverOn(row: int, column: int):
-	endDraggingPosition = Vector2(row, column)
+func on_letter_hover_on(row: int, column: int):
+	end_dragging_position = Vector2(row, column)
 
 
-func onLetterHoverOut(row: int, column: int):
-	endDraggingPosition = nullVector
+func on_letter_hover_out(_row: int, _column: int):
+	end_dragging_position = null_vector
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if dragging:
-		lineBetweenLetters.points[1] = get_local_mouse_position()
+		line_between_letters.points[1] = get_local_mouse_position()
 
 
-func initGamePole(initialWords: Array[String]):
-	levelWords = initialWords
+func init_game_pole(initial_words: Array[String]):
+	level_words = initial_words
 
 
-func startGame():
+func start_game():
 	for i in range(words.size()):
-		words[i].setWord(levelWords[i])
+		words[i].set_word(level_words[i])
 
-	for i in range(levelWords.size()):
-		var letters = levelWords[i].split("")
+	for i in range(level_words.size()):
+		var letters = level_words[i].split("")
 		for j in range(letters.size()):
-			rows[i].rowCells[j].setLetter(letters[j])
+			rows[i].row_cells[j].set_letter(letters[j])
 
 
-func checkLineCoordinates() -> String:
-	if startDraggingPosition == nullVector or endDraggingPosition == nullVector:
+func check_line_coordinates() -> String:
+	if start_dragging_position == null_vector or end_dragging_position == null_vector:
 		return ""
 
-	var totalWord = ""
+	var total_word = ""
 
-	if startDraggingPosition.x == endDraggingPosition.x:
-		for index in range(startDraggingPosition.y, endDraggingPosition.y + 1):
-			totalWord += rows[startDraggingPosition.x].rowCells[index].letter
-			#print(rows[startDraggingPosition.x].rowCells[index].letter)
-	elif startDraggingPosition.y == endDraggingPosition.y:
-		for index in range(startDraggingPosition.x, endDraggingPosition.x + 1):
-			totalWord += rows[index].rowCells[startDraggingPosition.y].letter
-			#print(rows[index].rowCells[startDraggingPosition.y].letter)
+	if start_dragging_position.x == end_dragging_position.x:
+		for index in range(start_dragging_position.y, end_dragging_position.y + 1):
+			total_word += rows[start_dragging_position.x].row_cells[index].letter
+			#print(rows[start_dragging_position.x].row_cells[index].letter)
+	elif start_dragging_position.y == end_dragging_position.y:
+		for index in range(start_dragging_position.x, end_dragging_position.x + 1):
+			total_word += rows[index].row_cells[start_dragging_position.y].letter
+			#print(rows[index].row_cells[start_dragging_position.y].letter)
 
-	return totalWord
+	return total_word

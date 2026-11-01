@@ -11,7 +11,6 @@ texture_filter = 1
 
 [node name="Player" parent="." unique_id=938097307 instance=ExtResource("2_kfcon")]
 position = Vector2(136, 232)
-movement_bounds = Rect2(0, 0, 1280, 768)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1604415086]
 position = Vector2(0, -16)
