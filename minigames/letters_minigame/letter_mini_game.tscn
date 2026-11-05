@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqcpn2e5wnr64"]
 
 [ext_resource type="Script" uid="uid://d3g42jdk7a6kk" path="res://minigames/letters_minigame/scripts/words_region.gd" id="1_01v6u"]
-[ext_resource type="Script" uid="uid://hxrtxfrdljhy" path="res://minigames/letters_minigame/scripts/letter-game.gd" id="1_mg7uy"]
+[ext_resource type="Script" uid="uid://hxrtxfrdljhy" path="res://minigames/letters_minigame/scripts/letter_game.gd" id="1_mg7uy"]
 [ext_resource type="PackedScene" uid="uid://p8tn7ruveudx" path="res://minigames/letters_minigame/letter_cell.tscn" id="2_k6km5"]
 [ext_resource type="Script" uid="uid://cn0i3ig2ss8v1" path="res://minigames/letters_minigame/scripts/cells_row.gd" id="2_oiqdg"]
 [ext_resource type="PackedScene" uid="uid://b762fyjr7kvqq" path="res://minigames/letters_minigame/word_item.tscn" id="4_4k46b"]

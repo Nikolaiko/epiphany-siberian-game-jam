@@ -2,7 +2,7 @@ extends SceneTree
 ## Run with --headless --path . --script assets/art/style-test/build_city_scene.gd.
 ## Produces an editable city scene. The game does not generate the map at runtime.
 
-const DESTINATION := "res://scenes/walkable_city/tile_map_layer.tscn"
+const DESTINATION := "res://locations/walkable_city/tile_map_layer.tscn"
 const MAP_SIZE := Vector2i(80, 48)
 const CELL := 16
 
