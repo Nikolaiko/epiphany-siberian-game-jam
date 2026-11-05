@@ -1,16 +1,15 @@
+class_name CompareMinigame
 extends Control
 
-class_name CompareMinigame
-
-var textMenu: TextMenuScene
+var text_menu: TextMenuScene
 
 
 func _ready() -> void:
-	textMenu = load("res://scenes/common/text_menu/text_menu_scene.tscn").instantiate()
-	textMenu.menuText = "Я в музее"
-	textMenu.onCloseCallback = onInitialTextClosed
-	add_child(textMenu)
+	text_menu = load("res://ui/common/text_menu/text_menu_scene.tscn").instantiate()
+	text_menu.menu_text = "Я в музее"
+	text_menu.on_close_callback = on_initial_text_closed
+	add_child(text_menu)
 
 
-func onInitialTextClosed():
-	remove_child(textMenu)
+func on_initial_text_closed():
+	remove_child(text_menu)

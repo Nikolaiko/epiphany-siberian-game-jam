@@ -1,17 +1,16 @@
+class_name TextMenuScene
 extends Control
 
-class_name TextMenuScene
+var menu_text: String
+var on_close_callback: Callable
 
 @onready var label: Label = $MarginContainer/VBoxContainer/Label
 
-var menuText: String
-var onCloseCallback: Callable
-
 
 func _ready() -> void:
-	label.text = menuText
+	label.text = menu_text
 
 
 func _on_close_button_pressed() -> void:
-	if onCloseCallback != null:
-		onCloseCallback.call()
+	if on_close_callback != null:
+		on_close_callback.call()
