@@ -2,7 +2,7 @@ extends SceneTree
 ## Replaces only visual resources in the current city; layout and physics remain intact.
 
 const DIRECTORY := "res://assets/art/style-test/city-v2/"
-const SCENE := "res://scenes/walkable_city/tile_map_layer.tscn"
+const SCENE := "res://locations/walkable_city/tile_map_layer.tscn"
 
 
 func _initialize() -> void:
