@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d0oj2kn75fvvb"]
+
+[ext_resource type="PackedScene" uid="uid://ps4p66sdphoh" path="res://locations/walkable_city/tile_map_layer.tscn" id="1_4io2a"]
+[ext_resource type="PackedScene" uid="uid://b5uh8pgvq7pbj" path="res://locations/walkable_city/student/student.tscn" id="2_rmp05"]
+
+[node name="City" type="Node2D" unique_id=1067096396]
+y_sort_enabled = true
+texture_filter = 1
+
+[node name="TileMapLayer" parent="." unique_id=384195150 instance=ExtResource("1_4io2a")]
+
+[node name="Student" parent="." unique_id=527703516 instance=ExtResource("2_rmp05")]
+position = Vector2(142, 241)
+
+[node name="Camera2D" type="Camera2D" parent="Student" unique_id=582969408]
+position = Vector2(2, 6)
+limit_left = 0
+limit_top = 0
+limit_right = 1280
+limit_bottom = 768

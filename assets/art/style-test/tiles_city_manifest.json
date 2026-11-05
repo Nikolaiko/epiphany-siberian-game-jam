@@ -1,0 +1,442 @@
+{
+  "tile_size": [
+    16,
+    16
+  ],
+  "atlas_size": [
+    192,
+    64
+  ],
+  "atlas_file": "tiles_city_atlas.png",
+  "separation": [
+    0,
+    0
+  ],
+  "margins": [
+    0,
+    0
+  ],
+  "palette": "Resurrect 64",
+  "tiles": [
+    {
+      "name": "asphalt",
+      "group": "terrain",
+      "atlas": [
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "asphalt_worn",
+      "group": "terrain",
+      "atlas": [
+        1,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "sidewalk",
+      "group": "terrain",
+      "atlas": [
+        2,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "sidewalk_worn",
+      "group": "terrain",
+      "atlas": [
+        3,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "grass",
+      "group": "terrain",
+      "atlas": [
+        0,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "grass_autumn_leaves",
+      "group": "terrain",
+      "atlas": [
+        1,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "earth",
+      "group": "terrain",
+      "atlas": [
+        2,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "earth_grass",
+      "group": "terrain",
+      "atlas": [
+        3,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "road_mark_vertical",
+      "group": "terrain",
+      "atlas": [
+        0,
+        2
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "road_mark_horizontal",
+      "group": "terrain",
+      "atlas": [
+        1,
+        2
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "crosswalk_vertical",
+      "group": "terrain",
+      "atlas": [
+        2,
+        2
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "crosswalk_horizontal",
+      "group": "terrain",
+      "atlas": [
+        3,
+        2
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "curb_north",
+      "group": "terrain",
+      "atlas": [
+        0,
+        3
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "curb_east",
+      "group": "terrain",
+      "atlas": [
+        1,
+        3
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "curb_south",
+      "group": "terrain",
+      "atlas": [
+        2,
+        3
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "curb_west",
+      "group": "terrain",
+      "atlas": [
+        3,
+        3
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_slate",
+      "group": "buildings",
+      "atlas": [
+        4,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_terracotta",
+      "group": "buildings",
+      "atlas": [
+        5,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "eave_plaster",
+      "group": "buildings",
+      "atlas": [
+        6,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "eave_brick",
+      "group": "buildings",
+      "atlas": [
+        7,
+        0
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_plaster",
+      "group": "buildings",
+      "atlas": [
+        4,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_brick",
+      "group": "buildings",
+      "atlas": [
+        5,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "window_plaster",
+      "group": "buildings",
+      "atlas": [
+        6,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "window_brick",
+      "group": "buildings",
+      "atlas": [
+        7,
+        1
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "door_wood",
+      "group": "buildings",
+      "atlas": [
+        4,
+        2
+      ],
+      "size": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "door_glass",
+      "group": "buildings",
+      "atlas": [
+        5,
+        2
+      ],
+      "size": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "window_tall_dark",
+      "group": "buildings",
+      "atlas": [
+        6,
+        2
+      ],
+      "size": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "window_tall_lit",
+      "group": "buildings",
+      "atlas": [
+        7,
+        2
+      ],
+      "size": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "tree_ochre",
+      "group": "props",
+      "atlas": [
+        8,
+        0
+      ],
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "tree_olive",
+      "group": "props",
+      "atlas": [
+        10,
+        0
+      ],
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "bench",
+      "group": "props",
+      "atlas": [
+        8,
+        2
+      ],
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "shrub",
+      "group": "props",
+      "atlas": [
+        8,
+        3
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "litter_bin",
+      "group": "props",
+      "atlas": [
+        9,
+        3
+      ],
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "lamp_lit",
+      "group": "props",
+      "atlas": [
+        10,
+        2
+      ],
+      "size": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "lamp_unlit",
+      "group": "props",
+      "atlas": [
+        11,
+        2
+      ],
+      "size": [
+        1,
+        2
+      ]
+    }
+  ]
+}

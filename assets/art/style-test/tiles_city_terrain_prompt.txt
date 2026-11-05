@@ -1,0 +1,12 @@
+Use case: stylized-concept.
+Asset: production-oriented pixel-art TERRAIN TILE ATLAS for a top-down retro RPG set in a contemporary small Russian city in autumn. This is a flat tile texture sheet, NOT a scene, NOT a perspective illustration.
+Output exactly a square 4-column by 4-row grid of equal square tiles, filling the entire image, with ZERO gaps, ZERO padding, ZERO borders and ZERO labels. Each square represents exactly 16x16 native pixels; complete sheet is designed for 64x64 native pixels. Render enlarged if necessary but preserve a strict coarse 64x64 logical pixel grid. All tiles are fully opaque.
+Strict tile contents, left to right:
+Row 1: plain dark grey asphalt, subtly worn dark grey asphalt, beige square sidewalk pavers, slightly varied beige square sidewalk pavers.
+Row 2: muted olive grass, olive grass with a few brown autumn leaves, dark brown bare earth, packed earth with sparse grass.
+Row 3: asphalt with a narrow vertical broken beige road marking centered on tile, asphalt with a narrow horizontal broken beige road marking centered on tile, asphalt with vertical beige pedestrian crossing stripes, asphalt with horizontal beige pedestrian crossing stripes.
+Row 4: sidewalk/asphalt transition with sidewalk in upper half and asphalt lower half separated by a straight horizontal curb; same materials sidewalk right/asphalt left with vertical curb; sidewalk lower half/asphalt upper half; sidewalk left/asphalt right.
+Road marks are paint, no words or numbers. Asphalt variants and markings must have identical base color. Sidewalk repeats in both axes; grass and earth tiles also repeat. No raised platforms, no bevel borders around individual texture tiles, no isometric diamonds. No depicted grid lines.
+Style: extremely simple authentic 16x16 tile art, coarse crisp square pixels, 2-4 flat colors per tile, large readable color clusters. Minimal surface detail, no noisy speckles, no high-resolution texture. Hard edges only, no antialiasing, no blur, no gradients, no shadows crossing tile boundaries. Orthographic top-down ground view. Upper-left lighting in subtle flat highlights.
+Palette: use only these muted Resurrect 64 colors: #2e222f #3e3546 #625565 #966c6c #ab947a #9babb2 #c7dcd0 #4c3e24 #676633 #313638 #374e4a #547e64 #92a984 #b2ba90 #9e4539 #cd683d. Mainly grey, beige, olive and brown, restrained autumn mood, no saturated colors.
+No characters, buildings, objects, text, letters, numbers, watermark, labels, UI or decorative frame. Tile atlas only.

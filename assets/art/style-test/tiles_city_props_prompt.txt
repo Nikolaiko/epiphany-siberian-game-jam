@@ -1,0 +1,14 @@
+Use case: stylized-concept.
+Asset: transparent city PROPS SPRITE ATLAS for a contemporary small Russian town in autumn, matching a muted retro top-down RPG with front faces visible, orthographic three-quarter RPG view, NEVER isometric diamonds.
+Square sheet designed for 64x64 native pixels, strict invisible 16x16 base grid. The exact layout occupies a 4x4 tile sheet:
+TOP LEFT QUADRANT (x0..31, y0..31 native): ONE complete autumn deciduous tree, 32x32 sprite, muted ochre and terracotta leaf canopy, visible brown trunk at bottom center.
+TOP RIGHT QUADRANT (x32..63, y0..31): ONE complete different autumn deciduous tree, 32x32 sprite, muted olive and brown foliage, trunk at bottom center.
+BOTTOM LEFT AREA (x0..31,y32..47): ONE wooden park bench, 32x16 sprite, front/top visible, horizontal slatted seat and back, dark metal legs, oriented horizontally.
+BOTTOM ROW LEFT CELL (x0..15,y48..63): ONE small low autumn shrub, 16x16 sprite.
+BOTTOM ROW SECOND CELL (x16..31,y48..63): ONE simple cylindrical dark metal street litter bin, 16x16 sprite.
+BOTTOM HALF THIRD COLUMN (x32..47,y32..63): ONE tall traditional street lamp, 16x32 sprite, restrained warm beige lantern at top, dark pole, base at bottom.
+BOTTOM HALF FOURTH COLUMN (x48..63,y32..63): ONE second street lamp of the same design, 16x32 sprite, unlit blue-grey lantern.
+Precisely align these sprite allocation regions with the invisible quarter grid. Every object must fit inside its allocated rectangle with a tiny transparent margin and cannot overlap adjacent objects. Trees are about 32 native pixels tall; lamps about 30; student will be 24-28 pixels tall, so keep correct small game prop scale.
+Style: authentic coarse retro pixel art, crisp large square pixels, hard stair-step edges, simple readable silhouette, flat large color clusters, minimal shading. One-native-pixel dark-plum outlines around props. Warm lighting from upper left. No gradients, glow, blur, antialiasing, painterly texture, noise or dithering.
+Palette: muted subset of Resurrect 64 only: #2e222f #3e3546 #625565 #966c6c #ab947a #9babb2 #c7dcd0 #4c3e24 #676633 #313638 #374e4a #547e64 #92a984 #b2ba90 #9e4539 #cd683d #e6904e #fbb954 #fdcbb0. Restrained olive, brown, brick, beige and grey.
+Output one sprite sheet, actual transparent alpha background. NO ground patches, floors, grass squares beneath objects, decorative shadows outside object regions, labels, grid lines, borders, text, letters, numbers, logos, watermarks or characters. No checkerboard drawn into image.

@@ -1,0 +1,7 @@
+Use case: identity-preserve.
+Edit the supplied calm student portrait into a surprised expression for a matching retro game dialogue avatar.
+Change ONLY facial expression: eyebrows raised, both eyes noticeably wider, mouth slightly open as if he has just heard an unexpected fact. Surprise and curiosity, no fear, no tears, no exaggerated comedy. Make the expression readable when reduced to 64x64 pixels.
+Keep EVERYTHING ELSE unchanged: same young male student's identity, face shape, nose, skin tone, exact hair silhouette and dark-brown hairstyle, exact head position, three-quarter view facing right, exact head-and-shoulders framing, same image dimensions and subject scale, same hoodie, same headphones around his neck, same warm upper-left lighting, same colors, same transparent background. Do not add hands or objects.
+Style: authentic retro pixel art, crisp hard stair-step edges, simple flat color clusters, limited shading and dark-plum outline. No antialiasing, gradients, blur, texture noise or dithering. Preserve the original portrait's palette and composition.
+Resurrect 64 target palette: #2e222f #3e3546 #625565 #966c6c #ab947a #694f62 #7f708a #9babb2 #c7dcd0 #313638 #45293f #753c54 #fca790 #fdcbb0 #9e4539 #cd683d #e6904e.
+Output one matching surprised portrait on a genuine transparent alpha background. No text, letters, captions, border, UI, watermark or drawn checkerboard.
