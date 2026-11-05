@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://ba5rodunglal1"]
+
+[ext_resource type="Texture2D" uid="uid://c8nnuxdtceelw" path="res://assets/art/backgrounds/bg_title_myth_and_shore.png" id="1_ui8k3"]
+[ext_resource type="Texture2D" uid="uid://cflu2okaxd062" path="res://assets/art/ui/ui_logo_prozrenie.png" id="2_da5tn"]
+[ext_resource type="Texture2D" uid="uid://b62g34am77aec" path="res://assets/art/ui/ui_button_new_game_active.png" id="3_uo7kb"]
+[ext_resource type="Texture2D" uid="uid://d1oeeii3an2m6" path="res://assets/art/ui/ui_button_new_game_pressed.png" id="4_887yd"]
+[ext_resource type="Texture2D" uid="uid://c01utrsshudmw" path="res://assets/art/ui/ui_button_new_game_rollover.png" id="5_lffsp"]
+[ext_resource type="Texture2D" uid="uid://b2kcqao7a6pbw" path="res://assets/art/ui/ui_button_new_game_disabled.png" id="6_8oo10"]
+[ext_resource type="Texture2D" uid="uid://bhw3ekxc1gmrj" path="res://assets/art/ui/ui_button_exit_active.png" id="7_0lcf1"]
+[ext_resource type="Texture2D" uid="uid://bfd77sjkltnhp" path="res://assets/art/ui/ui_button_exit_pressed.png" id="8_d6qym"]
+[ext_resource type="Texture2D" uid="uid://isckb5ns0cch" path="res://assets/art/ui/ui_button_exit_rollover.png" id="9_63emw"]
+[ext_resource type="Texture2D" uid="uid://butj0ju6b6bhr" path="res://assets/art/ui/ui_button_exit_disabled.png" id="10_e0kyw"]
+
+[node name="TitleScene" type="Control" unique_id=1586915120]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="AspectRatioContainer" parent="." unique_id=1606124338]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.7778
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1730917549]
+layout_mode = 2
+texture = ExtResource("1_ui8k3")
+stretch_mode = 4
+
+[node name="UIElements" type="MarginContainer" parent="." unique_id=1207546649]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_top = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIElements" unique_id=1590818567]
+layout_mode = 2
+
+[node name="Title" type="TextureRect" parent="UIElements/VBoxContainer" unique_id=385366343]
+layout_mode = 2
+texture = ExtResource("2_da5tn")
+
+[node name="Buttons" type="VBoxContainer" parent="UIElements/VBoxContainer" unique_id=800723468]
+layout_mode = 2
+
+[node name="StartButton" type="TextureButton" parent="UIElements/VBoxContainer/Buttons" unique_id=1455507087]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_uo7kb")
+texture_pressed = ExtResource("4_887yd")
+texture_hover = ExtResource("5_lffsp")
+texture_disabled = ExtResource("6_8oo10")
+
+[node name="ExitButton" type="TextureButton" parent="UIElements/VBoxContainer/Buttons" unique_id=1479299389]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_0lcf1")
+texture_pressed = ExtResource("8_d6qym")
+texture_hover = ExtResource("9_63emw")
+texture_disabled = ExtResource("10_e0kyw")

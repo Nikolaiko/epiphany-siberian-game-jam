@@ -19,10 +19,16 @@ run/main_scene="uid://bcdsw3w4oux0o"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneRouter="*uid://bi3k1yxw45qk6"
+
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 

@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dufg1g2crwfv6"]
+[gd_scene format=3 uid="uid://dufg1g2crwfv6"]
 
-[ext_resource type="Script" path="res://scenes/common/text_menu/scripts/text_menu.gd" id="1_jh32f"]
+[ext_resource type="Script" uid="uid://bpk4j0vppfvc5" path="res://ui/text_menu/scripts/text_menu.gd" id="1_jh32f"]
 
 [node name="TextMenuScene" type="Control"]
 layout_mode = 3

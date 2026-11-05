@@ -5,4 +5,4 @@
 [node name="MainScene" type="Node2D" unique_id=1627001265]
 script = ExtResource("1_0f027")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=242941267]
+[node name="SceneContainer" type="Node" parent="." unique_id=1582676851]
