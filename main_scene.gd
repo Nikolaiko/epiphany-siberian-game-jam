@@ -7,29 +7,28 @@ const TITLE_SCENE: PackedScene = preload(
 const STORY_SCENE: PackedScene = preload(
 	"res://locations/history/initial_story.tscn"
 )
+const CITY_SCENE: PackedScene = preload(
+	"res://locations/walkable_city/City.tscn"
+)
 
 var history_scene: StoryScene
-
-@onready var main_canvas = $CanvasLayer
 
 func _ready() -> void:
 	SceneRouter.setup($SceneContainer)
 	var title_scene = TITLE_SCENE.instantiate()
+	title_scene.start_game_pressed.connect(_on_start_game_pressed)
+	title_scene.exit_game_pressed.connect(_on_exit_game_pressed)
 	SceneRouter.fast_go_to(title_scene)
 
+func _on_start_game_pressed() -> void:
+	history_scene = STORY_SCENE.instantiate()
+	history_scene.story_finished.connect(_on_history_scene_closed)
+	SceneRouter.go_to(history_scene)
+
+func _on_exit_game_pressed() -> void:
+	get_tree().quit()
 
 func _on_history_scene_closed():
-	if history_scene != null:
-		main_canvas.remove_child(history_scene)
-		history_scene.queue_free()
-		history_scene = null
+	var city_scene = CITY_SCENE.instantiate()
+	SceneRouter.go_to(city_scene)
 
-	var city_scene = load("res://locations/walkable_city/City.tscn").instantiate()
-	add_child(city_scene)
-
-
-func _on_start_letters_game_button_pressed() -> void:
-	var letter_game: LetterGame = (
-		load("res://minigames/letters_minigame/letter_mini_game.tscn").instantiate()
-	)
-	main_canvas.add_child(letter_game)

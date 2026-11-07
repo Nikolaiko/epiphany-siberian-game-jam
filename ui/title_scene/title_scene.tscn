@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ba5rodunglal1"]
 
 [ext_resource type="Texture2D" uid="uid://c8nnuxdtceelw" path="res://assets/art/backgrounds/bg_title_myth_and_shore.png" id="1_ui8k3"]
+[ext_resource type="Script" uid="uid://bi57yw3scn6av" path="res://ui/title_scene/title_scene.gd" id="1_uo7kb"]
 [ext_resource type="Texture2D" uid="uid://cflu2okaxd062" path="res://assets/art/ui/ui_logo_prozrenie.png" id="2_da5tn"]
 [ext_resource type="Texture2D" uid="uid://b62g34am77aec" path="res://assets/art/ui/ui_button_new_game_active.png" id="3_uo7kb"]
 [ext_resource type="Texture2D" uid="uid://d1oeeii3an2m6" path="res://assets/art/ui/ui_button_new_game_pressed.png" id="4_887yd"]
@@ -18,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uo7kb")
 
 [node name="Background" type="AspectRatioContainer" parent="." unique_id=1606124338]
 layout_mode = 1
@@ -51,6 +53,7 @@ texture = ExtResource("2_da5tn")
 layout_mode = 2
 
 [node name="StartButton" type="TextureButton" parent="UIElements/VBoxContainer/Buttons" unique_id=1455507087]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -60,6 +63,7 @@ texture_hover = ExtResource("5_lffsp")
 texture_disabled = ExtResource("6_8oo10")
 
 [node name="ExitButton" type="TextureButton" parent="UIElements/VBoxContainer/Buttons" unique_id=1479299389]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4

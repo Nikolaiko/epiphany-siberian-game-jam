@@ -11,3 +11,7 @@
 4 ноября 2026. [Вариант с кромкой озера](art/backgrounds/bg_title_myth_and_shore.png) создан встроенным OpenAI image_gen на основе предыдущего кадра со студентом и открыткой. [Запрос](art/backgrounds/bg_title_myth_and_shore_prompt.txt). Обработка в Aseprite — 640×360, оттенки Resurrect 64 без дизеринга.
 
 4 ноября 2026. [Логотип «Прозрение» и кнопки меню](ui/) отрисованы средствами Core Graphics и Core Text по утверждённому превью. Для логотипа использован Georgia Bold, для кнопок — Verdana Bold. Цвета взяты из Resurrect 64.
+
+7 ноября 2026. [Диалоговые портреты Глеба](art/portraits/) созданы встроенным OpenAI image_gen по [кадру кофейни](art/backgrounds/bg_cafe_gleb.png) и [портрету студента](art/style-test/portrait_student_calm.png). Усмешка и задумчивость получены правкой нейтрального портрета. Обработка в Aseprite по образцу студенческих портретов — 64×64, палитра Resurrect 64, порог прозрачности 128, без дизеринга и ручной ретуши.
+
+7 ноября 2026. [Разговор в кофейне](art/backgrounds/bg_cafe_gleb_dialogue.png) основан на [кадре с Глебом](art/backgrounds/bg_cafe_gleb.png). OpenAI image_gen изменил поворот головы студента и направление взгляда. Новый фрагмент совмещён с исходным фоном в Aseprite. Итог — 640×360, палитра Resurrect 64.
