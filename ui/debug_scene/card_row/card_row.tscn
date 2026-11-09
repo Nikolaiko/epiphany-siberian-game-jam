@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cmkgkc80tqals"]
+
+[ext_resource type="Script" uid="uid://cl2ltsjfr13cf" path="res://ui/debug_scene/card_row/card_row.gd" id="1_xe2vv"]
+
+[node name="CardRow" type="HBoxContainer" unique_id=893492551]
+script = ExtResource("1_xe2vv")
+
+[node name="Title" type="Label" parent="." unique_id=2028200053]
+layout_mode = 2
+text = "K1    "
+
+[node name="Side" type="Label" parent="." unique_id=1771623949]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Миф"
+
+[node name="FlipButton" type="Button" parent="." unique_id=1889058662]
+layout_mode = 2
+text = "Перевернуть"
+
+[connection signal="pressed" from="FlipButton" to="." method="_on_flip_button_pressed"]

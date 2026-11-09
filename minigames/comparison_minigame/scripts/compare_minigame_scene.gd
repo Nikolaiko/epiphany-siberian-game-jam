@@ -1,7 +1,7 @@
 class_name CompareMinigame
 extends Control
 
-var text_menu: TextMenuScene
+var text_menu: TextMenu
 
 
 func _ready() -> void:

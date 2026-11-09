@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://c4s4bcbtwg7u0"]
+
+[ext_resource type="Script" uid="uid://cl5iyhsddn73a" path="res://data/card_data.gd" id="1_p5c7t"]
+
+[resource]
+script = ExtResource("1_p5c7t")
+id = &"k2"
+myth_text = "У немцев были тяжёлые доспехи, а у наших — лёгкие"
+fact_text = "В 1242 году у обеих сторон кольчуга, шлем и щит. Сплошные латы появятся через 100–200 лет"
+source = "А. Н. Кирпичников, «Древнерусское оружие»"
+metadata/_custom_type_script = "uid://cl5iyhsddn73a"

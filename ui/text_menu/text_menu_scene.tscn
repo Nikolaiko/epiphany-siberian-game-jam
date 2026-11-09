@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dufg1g2crwfv6"]
 
-[ext_resource type="Script" uid="uid://bpk4j0vppfvc5" path="res://ui/text_menu/scripts/text_menu.gd" id="1_jh32f"]
+[ext_resource type="Script" uid="uid://bpk4j0vppfvc5" path="res://ui/text_menu/text_menu.gd" id="1_jh32f"]
 
-[node name="TextMenuScene" type="Control"]
+[node name="TextMenuScene" type="Control" unique_id=1672769082]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jh32f")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2133151725]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,19 +19,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1539959159]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=929870736]
 layout_mode = 2
 text = "Some Menu Text"
 horizontal_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1157591532]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer"]
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer" unique_id=866302873]
 layout_mode = 2
 text = "Закрыть"
 

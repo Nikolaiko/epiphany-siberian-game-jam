@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cugbo2d71v6lp"]
+
+[node name="FindingRow" type="HBoxContainer" unique_id=1236335786]
+
+[node name="Title" type="Label" parent="." unique_id=674471808]
+layout_mode = 2
+text = "Title"
+
+[node name="ForgotButton" type="Button" parent="." unique_id=406339791]
+layout_mode = 2

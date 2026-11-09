@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FoundingData" format=3 uid="uid://hxqdxobm7mut"]
+
+[ext_resource type="Script" uid="uid://cdxfij5sjdevh" path="res://data/founding_data.gd" id="1_j1wsh"]
+
+[resource]
+script = ExtResource("1_j1wsh")
+id = &"h2"
+text = "Немецкая хроника: «на одного немца — шестьдесят русских». Привирают обе стороны"
+metadata/_custom_type_script = "uid://cdxfij5sjdevh"

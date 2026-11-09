@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FoundingData" format=3 uid="uid://cdjmyukqgs2o8"]
+
+[ext_resource type="Script" uid="uid://cdxfij5sjdevh" path="res://data/founding_data.gd" id="1_d4j8w"]
+
+[resource]
+script = ExtResource("1_d4j8w")
+id = &"h4"
+text = "Точное место битвы не найдено до сих пор"
+metadata/_custom_type_script = "uid://cdxfij5sjdevh"

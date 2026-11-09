@@ -1,6 +1,12 @@
 class_name StoryScene
 extends Control
 
+const CARD_K1: CardData = preload("res://data/cards/k1.tres")
+const CARD_K2: CardData = preload("res://data/cards/k2.tres")
+const CARD_K3: CardData = preload("res://data/cards/k3.tres")
+const CARD_K4: CardData = preload("res://data/cards/k4.tres")
+const CARD_K5: CardData = preload("res://data/cards/k5.tres")
+
 const CAFE_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe_evening.png")
 const MYTH_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_student_myth.png")
 const NOTES_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe_notebook.png")
@@ -83,6 +89,13 @@ func _show_page() -> void:
 	_next_button.text = "Начнём!" if _dialog_index == DIALOGUE_PAGES.size() - 1 else "Далее"
 	_avatar.texture = AVATARS_FOR_DIALOGUE[_dialog_index] if _dialog_index < AVATARS_FOR_DIALOGUE.size() else null
 	_avatar_title.text = "Студент" if AVATARS_FOR_DIALOGUE[_dialog_index] == STUDENT_CALM_AVATAR else "Глеб"
+
+	if _dialog_index == 4:
+		GameData.give_card(CARD_K1)
+		GameData.give_card(CARD_K2)
+		GameData.give_card(CARD_K3)
+		GameData.give_card(CARD_K4)
+		GameData.give_card(CARD_K5)
 
 func _on_start_button_pressed() -> void:
 	if _dialog_index < DIALOGUE_PAGES.size() - 1:

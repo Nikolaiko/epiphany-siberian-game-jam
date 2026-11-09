@@ -21,6 +21,8 @@ func _ready() -> void:
 	SceneRouter.fast_go_to(title_scene)
 
 func _on_start_game_pressed() -> void:
+	GameData.reset()
+
 	history_scene = STORY_SCENE.instantiate()
 	history_scene.story_finished.connect(_on_history_scene_closed)
 	SceneRouter.go_to(history_scene)

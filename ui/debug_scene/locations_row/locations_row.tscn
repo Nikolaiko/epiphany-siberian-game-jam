@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dwdp381go868i"]
+
+[ext_resource type="Script" uid="uid://c2k824670ylpq" path="res://ui/debug_scene/locations_row/location_row.gd" id="1_s67k5"]
+
+[node name="LocationsRow" type="HBoxContainer" unique_id=707894197]
+script = ExtResource("1_s67k5")
+
+[node name="Title" type="Label" parent="." unique_id=1971033586]
+layout_mode = 2
+text = "Название"
+
+[node name="ForgotButton" type="Button" parent="." unique_id=624258217]
+layout_mode = 2
+text = "Отменить"
+
+[connection signal="pressed" from="ForgotButton" to="." method="_on_reset_button_pressed"]

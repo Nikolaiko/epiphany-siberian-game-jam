@@ -1,8 +1,7 @@
-class_name TextMenuScene
+class_name TextMenu
 extends Control
 
 var menu_text: String
-var on_close_callback: Callable
 
 @onready var label: Label = $MarginContainer/VBoxContainer/Label
 
@@ -13,4 +12,4 @@ func _ready() -> void:
 
 
 func _on_close_button_pressed() -> void:
-	emit_signal("close")	
+	close.emit()

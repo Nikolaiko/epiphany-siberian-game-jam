@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://2s2s4dyo01km"]
+
+[ext_resource type="Script" uid="uid://cl5iyhsddn73a" path="res://data/card_data.gd" id="1_snb82"]
+
+[resource]
+script = ExtResource("1_snb82")
+id = &"k4"
+myth_text = "Это была огромная битва, десятки тысяч воинов"
+fact_text = "Летопись: 400 немцев убито, 50 в плену. Немецкая хроника: 20 рыцарей убито, 6 в плену. Историки оценивают войска от сотен до нескольких тысяч человек"
+metadata/_custom_type_script = "uid://cl5iyhsddn73a"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/card_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"k1"
+myth_text = "Мы победили, потому что были едины."
+fact_text = "Единство пришлось собирать. В 1240 году Новгород выгнал Александра, Псков сдали немцам при помощи своих же бояр, за Орден воевал русский князь. Александр собрал новгородцев, псковичей и суздальцев — и победил."
+source = "Новгородская первая летопись, 1240–1242 годы."

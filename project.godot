@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 SceneRouter="*uid://bi3k1yxw45qk6"
+GameData="*uid://hllgxqxqf04c"
 
 [display]
 
