@@ -5,5 +5,3 @@ extends Resource
 @export_multiline var myth_text: String
 @export_multiline var fact_text: String
 @export_multiline var source: String
-
-

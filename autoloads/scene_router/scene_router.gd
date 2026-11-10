@@ -10,13 +10,16 @@ var _transitioning := false
 
 @onready var _fade_rect: ColorRect = $CanvasLayer/FadeRect
 
-func _ready() -> void:	
+
+func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	_fade_rect.color = Color(0, 0, 0, 0)
 	_fade_rect.hide()
 
+
 func setup(container: Node) -> void:
 	_container = container
+
 
 func fast_go_to(scene: Node) -> void:
 	if _transitioning:
@@ -33,6 +36,7 @@ func fast_go_to(scene: Node) -> void:
 	_current_scene = scene
 	_container.add_child(_current_scene)
 	scene_opened.emit(_current_scene)
+
 
 func go_to(scene: Node) -> void:
 	if _transitioning:
@@ -67,7 +71,5 @@ func go_to(scene: Node) -> void:
 
 func _fade_to(alpha: float) -> void:
 	var tween := create_tween()
-	tween.tween_property(
-		_fade_rect, "color:a", alpha, FADE_DURATION
-	)
+	tween.tween_property(_fade_rect, "color:a", alpha, FADE_DURATION)
 	await tween.finished

@@ -9,8 +9,8 @@ script = ExtResource("1_s67k5")
 layout_mode = 2
 text = "Название"
 
-[node name="ForgotButton" type="Button" parent="." unique_id=624258217]
+[node name="FlipButton" type="Button" parent="." unique_id=624258217]
 layout_mode = 2
 text = "Отменить"
 
-[connection signal="pressed" from="ForgotButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="FlipButton" to="." method="_on_reset_button_pressed"]

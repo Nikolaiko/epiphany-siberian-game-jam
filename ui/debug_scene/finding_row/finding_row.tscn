@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://cugbo2d71v6lp"]
 
+[ext_resource type="Script" uid="uid://c0nvb43qjiqtl" path="res://ui/debug_scene/finding_row/finding_row.gd" id="1_ju6bb"]
+
 [node name="FindingRow" type="HBoxContainer" unique_id=1236335786]
+script = ExtResource("1_ju6bb")
 
 [node name="Title" type="Label" parent="." unique_id=674471808]
 layout_mode = 2

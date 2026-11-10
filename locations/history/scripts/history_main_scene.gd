@@ -1,6 +1,8 @@
 class_name StoryScene
 extends Control
 
+signal story_finished
+
 const CARD_K1: CardData = preload("res://data/cards/k1.tres")
 const CARD_K2: CardData = preload("res://data/cards/k2.tres")
 const CARD_K3: CardData = preload("res://data/cards/k3.tres")
@@ -11,11 +13,15 @@ const CAFE_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe
 const MYTH_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_student_myth.png")
 const NOTES_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe_notebook.png")
 const GLEB_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe_gleb.png")
-const GLEB_DIALOGUE_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe_gleb_dialogue.png")
+const GLEB_DIALOGUE_BACKGROUND: Texture2D = preload(
+	"res://assets/art/backgrounds/bg_cafe_gleb_dialogue.png"
+)
 
 const GLEB_CALM_AVATAR: Texture2D = preload("res://assets/art/portraits/portrait_gleb_calm.png")
 const GLEB_SMIRK_AVATAR: Texture2D = preload("res://assets/art/portraits/portrait_gleb_smirk.png")
-const STUDENT_CALM_AVATAR: Texture2D = preload("res://assets/art/portraits/portrait_student_calm.png")
+const STUDENT_CALM_AVATAR: Texture2D = preload(
+	"res://assets/art/portraits/portrait_student_calm.png"
+)
 
 const DIALOGUE_PAGES: Array[String] = [
 	"Я сидел вечером в любимой кофейне и пил любимый латте на кокосовом.",
@@ -35,7 +41,7 @@ const DIALOGUE_PAGES: Array[String] = [
 	"Забавно...",
 	"Что-то смешное?",
 	"Простите. Просто «тупые немцы» и «провалились» — это сильно.",
-	"Это же все знают.", 
+	"Это же все знают.",
 	"Вот именно. Удачи с докладом."
 ]
 
@@ -65,8 +71,6 @@ const AVATARS_FOR_DIALOGUE: Array[Texture2D] = [
 	GLEB_CALM_AVATAR,
 ]
 
-signal story_finished()
-
 var _dialog_index: int = 0
 
 @onready var _dialogue_text: Label = %DialogueText
@@ -83,12 +87,18 @@ func _ready() -> void:
 
 
 func _show_page() -> void:
-	_background.texture = PAGES_FOR_DIALOGUE[_dialog_index] if _dialog_index < PAGES_FOR_DIALOGUE.size() else null
+	_background.texture = (
+		PAGES_FOR_DIALOGUE[_dialog_index] if _dialog_index < PAGES_FOR_DIALOGUE.size() else null
+	)
 	_dialogue_text.text = DIALOGUE_PAGES[_dialog_index]
 	_page_counter.text = "%d / %d" % [_dialog_index + 1, DIALOGUE_PAGES.size()]
 	_next_button.text = "Начнём!" if _dialog_index == DIALOGUE_PAGES.size() - 1 else "Далее"
-	_avatar.texture = AVATARS_FOR_DIALOGUE[_dialog_index] if _dialog_index < AVATARS_FOR_DIALOGUE.size() else null
-	_avatar_title.text = "Студент" if AVATARS_FOR_DIALOGUE[_dialog_index] == STUDENT_CALM_AVATAR else "Глеб"
+	_avatar.texture = (
+		AVATARS_FOR_DIALOGUE[_dialog_index] if _dialog_index < AVATARS_FOR_DIALOGUE.size() else null
+	)
+	_avatar_title.text = (
+		"Студент" if AVATARS_FOR_DIALOGUE[_dialog_index] == STUDENT_CALM_AVATAR else "Глеб"
+	)
 
 	if _dialog_index == 4:
 		GameData.give_card(CARD_K1)
@@ -96,6 +106,7 @@ func _show_page() -> void:
 		GameData.give_card(CARD_K3)
 		GameData.give_card(CARD_K4)
 		GameData.give_card(CARD_K5)
+
 
 func _on_start_button_pressed() -> void:
 	if _dialog_index < DIALOGUE_PAGES.size() - 1:
