@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bkfamye8oryaf" path="res://main_scene.gd" id="1_8scqy"]
 
-[node name="MainScene" type="Node2D"]
+[node name="MainScene" type="Node2D" unique_id=1119548231]
 script = ExtResource("1_8scqy")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Container" type="Node" parent="." unique_id=1493425814]
+
+[node name="DebugLayer" type="CanvasLayer" parent="." unique_id=714400051]

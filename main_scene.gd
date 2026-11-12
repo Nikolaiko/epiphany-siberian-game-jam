@@ -1,16 +1,27 @@
 class_name MainScene
 extends Node
 
+const TITLE_SCENE: PackedScene = preload("res://ui/initial_screen/initial_screen.tscn")
+const STORY_SCENE: PackedScene = preload("res://locations/history/initial_story.tscn")
+
 var history_scene: StoryScene
 
-@onready var main_canvas = $CanvasLayer
-
+@onready var main_canvas: CanvasLayer = $CanvasLayer
 
 func _ready() -> void:
-	history_scene = load("res://locations/history/initial_story.tscn").instantiate()
-	history_scene.finished_callback = _on_history_scene_closed
-	main_canvas.add_child(history_scene)
+	SceneRouter.setup($Container)
 
+	var title_scene: Node = TITLE_SCENE.instantiate()
+	title_scene.start_game_pressed.connect(_on_start_game_pressed)
+	title_scene.exit_game_pressed.connect(_on_exit_game_pressed)
+	SceneRouter.fast_go_to(title_scene)
+
+func _on_start_game_pressed() -> void:
+	var history_scene: Node = STORY_SCENE.instantiate()
+	SceneRouter.go_to(history_scene)
+
+func _on_exit_game_pressed() -> void:
+	get_tree().quit()
 
 func _on_history_scene_closed():
 	if history_scene != null:

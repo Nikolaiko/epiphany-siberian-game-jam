@@ -19,6 +19,10 @@ run/main_scene="uid://bcdsw3w4oux0o"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneRouter="*uid://bi3k1yxw45qk6"
+
 [debug]
 
 gdscript/warnings/untyped_declaration=1
