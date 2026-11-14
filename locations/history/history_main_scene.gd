@@ -5,9 +5,6 @@ signal story_finished
 
 const PROLOGUE: DialogueResource = preload("res://data/dialoges/prologue.dialogue")
 
-var _current_line: DialogueLine
-var _busy: bool = false
-
 const CARD_K1: CardData = preload("res://data/cards/k1.tres")
 const CARD_K2: CardData = preload("res://data/cards/k2.tres")
 const CARD_K3: CardData = preload("res://data/cards/k3.tres")
@@ -28,7 +25,10 @@ const STUDENT_CALM_AVATAR: Texture2D = preload(
 	"res://assets/art/portraits/portrait_student_calm.png"
 )
 
-@onready var _dialogue_text: Label = %DialogueText
+var _current_line: DialogueLine
+var _busy: bool = false
+
+@onready var _dialogue_text: DialogueLabel = %DialogueText
 @onready var _next_button: Button = %NextButton
 @onready var _background: TextureRect = $BackgroundContainer/TextureRect
 @onready var _avatar: TextureRect = %Portrait
@@ -37,6 +37,7 @@ const STUDENT_CALM_AVATAR: Texture2D = preload(
 
 func _ready() -> void:
 	await _show_line("start")
+
 
 func _show_line(line_id: String) -> void:
 	_busy = true
@@ -47,13 +48,14 @@ func _show_line(line_id: String) -> void:
 		story_finished.emit()
 		return
 
-	_dialogue_text.text = _current_line.text
+	_dialogue_text.dialogue_line = _current_line
 	_avatar_title.text = _current_line.character
 	_avatar_title.visible = true
 
 	_apply_background()
 	_apply_portrait()
-	
+	_dialogue_text.type_out()
+
 	if _current_line.has_tag("cards"):
 		_give_cards()
 
@@ -62,12 +64,14 @@ func _show_line(line_id: String) -> void:
 	_busy = false
 	_next_button.grab_focus()
 
+
 func _give_cards() -> void:
 	GameData.give_card(CARD_K1)
 	GameData.give_card(CARD_K2)
 	GameData.give_card(CARD_K3)
 	GameData.give_card(CARD_K4)
 	GameData.give_card(CARD_K5)
+
 
 func _apply_background() -> void:
 	match _current_line.get_tag_value("bg"):
@@ -81,6 +85,7 @@ func _apply_background() -> void:
 			_background.texture = GLEB_BACKGROUND
 		"talk":
 			_background.texture = GLEB_DIALOGUE_BACKGROUND
+
 
 func _apply_portrait() -> void:
 	_avatar.visible = true
@@ -98,8 +103,19 @@ func _apply_portrait() -> void:
 			_avatar.texture = null
 			_avatar.hide()
 
+
 func _on_start_button_pressed() -> void:
 	if _busy or _current_line == null:
 		return
 
+	if _dialogue_text.is_typing:
+		_dialogue_text.skip_typing()
+		return
+
 	await _show_line(_current_line.next_id)
+
+
+func _on_dialogue_text_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		_dialogue_text.accept_event()
+		_on_start_button_pressed()

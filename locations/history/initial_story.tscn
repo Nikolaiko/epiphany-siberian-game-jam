@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://br25kqjesnpo3" path="res://locations/history/history_main_scene.gd" id="1_q36sb"]
 [ext_resource type="Texture2D" uid="uid://cj06vdekadh8k" path="res://assets/art/backgrounds/bg_cafe_evening.png" id="2_3fdy8"]
+[ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.gd" id="3_q36sb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dialog"]
 content_margin_left = 12.0
@@ -119,14 +120,19 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
 theme_override_styles/focus = SubResource("StyleBoxFlat_button_focus")
 text = "Далее"
 
-[node name="DialogueText" type="Label" parent="DialogBox/Content/TextContainer" unique_id=639728041]
+[node name="DialogueText" type="RichTextLabel" parent="DialogBox/Content/TextContainer" unique_id=521338494]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.780392, 0.862745, 0.815686, 1)
-theme_override_constants/line_spacing = 2
-theme_override_font_sizes/font_size = 12
-text = "Я сидел вечером в любимой кофейне и пил любимый латте на кокосовом."
-autowrap_mode = 3
+theme_override_colors/default_color = Color(0.780392, 0.862745, 0.815686, 1)
+theme_override_constants/line_separation = 2
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+script = ExtResource("3_q36sb")
+skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
+metadata/_custom_type_script = "uid://g32um0mltv5d"
 
 [connection signal="pressed" from="DialogBox/Content/TextContainer/Header/NextButton" to="." method="_on_start_button_pressed"]
+[connection signal="gui_input" from="DialogBox/Content/TextContainer/DialogueText" to="." method="_on_dialogue_text_gui_input"]
