@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cdwtfpct5ksce"]
 
-[ext_resource type="Script" uid="uid://br25kqjesnpo3" path="res://locations/history/scripts/history_main_scene.gd" id="1_rjc1r"]
+[ext_resource type="Script" uid="uid://br25kqjesnpo3" path="res://locations/history/history_main_scene.gd" id="1_rjc1r"]
 [ext_resource type="Texture2D" uid="uid://cj06vdekadh8k" path="res://assets/art/style-test/bg_cafe_evening.png" id="2_drthn"]
 [ext_resource type="Texture2D" uid="uid://dm77xcqbkr7xh" path="res://assets/art/style-test/portrait_student_calm.png" id="3_vv5sr"]
+[ext_resource type="Script" uid="uid://g32um0mltv5d" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.gd" id="4_3fdy8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dialog"]
 content_margin_left = 12.0
@@ -36,13 +37,13 @@ border_width_bottom = 1
 border_color = Color(0.670588, 0.580392, 0.478431, 1)
 
 [node name="InitialStory" type="Control" unique_id=1034932186]
+texture_filter = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_filter = 1
 script = ExtResource("1_rjc1r")
 
 [node name="BackgroundContainer" type="MarginContainer" parent="." unique_id=540330514]
@@ -74,11 +75,12 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_dialog")
 
-[node name="Content" type="HBoxContainer" parent="DialogBox"]
+[node name="Content" type="HBoxContainer" parent="DialogBox" unique_id=112569915]
 layout_mode = 2
 theme_override_constants/separation = 12
 
 [node name="Portrait" type="TextureRect" parent="DialogBox/Content" unique_id=785673244]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 size_flags_vertical = 4
@@ -92,23 +94,17 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 2
 
-[node name="Header" type="HBoxContainer" parent="DialogBox/Content/TextContainer"]
+[node name="Header" type="HBoxContainer" parent="DialogBox/Content/TextContainer" unique_id=2137062399]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="Speaker" type="Label" parent="DialogBox/Content/TextContainer/Header"]
+[node name="Speaker" type="Label" parent="DialogBox/Content/TextContainer/Header" unique_id=437534897]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.670588, 0.580392, 0.478431, 1)
 theme_override_font_sizes/font_size = 13
 text = "Студент"
-
-[node name="PageCounter" type="Label" parent="DialogBox/Content/TextContainer/Header"]
-unique_name_in_owner = true
-layout_mode = 2
-theme_override_colors/font_color = Color(0.670588, 0.580392, 0.478431, 1)
-theme_override_font_sizes/font_size = 11
-text = "1 / 4"
 
 [node name="NextButton" type="Button" parent="DialogBox/Content/TextContainer/Header" unique_id=525264771]
 unique_name_in_owner = true
@@ -116,24 +112,23 @@ custom_minimum_size = Vector2(80, 22)
 layout_mode = 2
 mouse_default_cursor_shape = 2
 theme_override_colors/font_color = Color(0.780392, 0.862745, 0.815686, 1)
-theme_override_colors/font_hover_color = Color(0.992157, 0.796078, 0.690196, 1)
 theme_override_colors/font_focus_color = Color(0.780392, 0.862745, 0.815686, 1)
 theme_override_colors/font_pressed_color = Color(0.992157, 0.796078, 0.690196, 1)
+theme_override_colors/font_hover_color = Color(0.992157, 0.796078, 0.690196, 1)
 theme_override_font_sizes/font_size = 12
 theme_override_styles/normal = SubResource("StyleBoxFlat_button")
-theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_button")
+theme_override_styles/hover = SubResource("StyleBoxFlat_button_hover")
 theme_override_styles/focus = SubResource("StyleBoxFlat_button_focus")
 text = "Далее"
 
-[node name="DialogueText" type="Label" parent="DialogBox/Content/TextContainer" unique_id=639728041]
+[node name="DialogueText" type="RichTextLabel" parent="DialogBox/Content/TextContainer" unique_id=1145732838]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0.780392, 0.862745, 0.815686, 1)
-theme_override_constants/line_spacing = 2
-theme_override_font_sizes/font_size = 12
-text = "Я сидел вечером в любимой кофейне и пил любимый латте на кокосовом."
-autowrap_mode = 3
+script = ExtResource("4_3fdy8")
+skip_pause_at_abbreviations = PackedStringArray("Mr", "Mrs", "Ms", "Dr", "etc", "eg", "ex")
+metadata/_custom_type_script = "uid://g32um0mltv5d"
 
 [connection signal="pressed" from="DialogBox/Content/TextContainer/Header/NextButton" to="." method="_on_start_button_pressed"]
+[connection signal="gui_input" from="DialogBox/Content/TextContainer/DialogueText" to="." method="_on_dialogue_text_gui_input"]

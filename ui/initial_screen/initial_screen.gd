@@ -4,8 +4,8 @@ extends Control
 signal start_game_pressed
 signal exit_game_pressed
 
-@onready var _start_game_button = %StartButton
-@onready var _exit_game_button = %ExitButton
+@onready var _start_game_button: TextureButton = %StartButton
+@onready var _exit_game_button: TextureButton = %ExitButton
 
 func _ready() -> void:
     _start_game_button.pressed.connect(_on_start_button_pressed)
