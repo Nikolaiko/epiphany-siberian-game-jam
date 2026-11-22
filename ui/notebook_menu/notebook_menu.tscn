@@ -1,6 +1,21 @@
 [gd_scene format=3 uid="uid://dq6tfl8ulhaa0"]
 
 [ext_resource type="Texture2D" uid="uid://cimhonkuvjpkv" path="res://assets/art/ui/notebook/ui_notebook_open.png" id="1_nn1xk"]
+[ext_resource type="Texture2D" uid="uid://xbrinnpwl1xr" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_normal.png" id="2_to05f"]
+[ext_resource type="Texture2D" uid="uid://c77ygvxdd6er" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_pressed.png" id="3_nb1dx"]
+[ext_resource type="Texture2D" uid="uid://bs2g7bgtmynec" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_hover.png" id="4_q03li"]
+[ext_resource type="Texture2D" uid="uid://bsuxof2g2r21f" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_disabled.png" id="5_7doqe"]
+[ext_resource type="Texture2D" uid="uid://bp3xbp24hanw5" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_focus.png" id="6_g4av7"]
+[ext_resource type="Texture2D" uid="uid://dboi0ystlumdy" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_normal.png" id="7_g4av7"]
+[ext_resource type="Texture2D" uid="uid://cp123dwp1kknt" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_selected.png" id="8_ht3ri"]
+[ext_resource type="Texture2D" uid="uid://duljojk32bqs0" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_hover.png" id="8_xfoq8"]
+[ext_resource type="Texture2D" uid="uid://7d1u2al0dwc1" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_disabled.png" id="9_ae1ir"]
+[ext_resource type="Texture2D" uid="uid://clj5tjxch5tqt" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_focus.png" id="10_no81u"]
+[ext_resource type="Texture2D" uid="uid://cjmrhamescbua" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_normal.png" id="12_gl1kh"]
+[ext_resource type="Texture2D" uid="uid://cwlj3ev5huhb0" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_selected.png" id="13_msold"]
+[ext_resource type="Texture2D" uid="uid://bwkoo8omptwjq" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_hover.png" id="14_o2uf8"]
+[ext_resource type="Texture2D" uid="uid://ckwpl3lkfaljo" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_disabled.png" id="15_vd4vr"]
+[ext_resource type="Texture2D" uid="uid://4rubax27ljm6" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_focus.png" id="16_qpnay"]
 
 [node name="NotebookMenu" type="Control" unique_id=980607780]
 layout_mode = 3
@@ -54,3 +69,117 @@ offset_top = 12.0
 offset_right = 262.0
 offset_bottom = 35.0
 text = "Блокнот доклада"
+
+[node name="CloseButton" type="TextureButton" parent="Book" unique_id=767821236]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 10.0
+offset_right = 472.0
+offset_bottom = 34.0
+texture_normal = ExtResource("2_to05f")
+texture_pressed = ExtResource("3_nb1dx")
+texture_hover = ExtResource("4_q03li")
+texture_disabled = ExtResource("5_7doqe")
+texture_focused = ExtResource("6_g4av7")
+
+[node name="Tabs" type="Control" parent="Book" unique_id=1781702998]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StoriesTab" type="TextureButton" parent="Book/Tabs" unique_id=1015558451]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 12.0
+offset_right = 346.0
+offset_bottom = 36.0
+texture_normal = ExtResource("7_g4av7")
+texture_pressed = ExtResource("8_ht3ri")
+texture_hover = ExtResource("8_xfoq8")
+texture_disabled = ExtResource("9_ae1ir")
+texture_focused = ExtResource("10_no81u")
+
+[node name="FindingsTab" type="TextureButton" parent="Book/Tabs" unique_id=1978589709]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 12.0
+offset_right = 418.0
+offset_bottom = 36.0
+texture_normal = ExtResource("7_g4av7")
+texture_pressed = ExtResource("8_ht3ri")
+texture_hover = ExtResource("8_xfoq8")
+texture_disabled = ExtResource("9_ae1ir")
+texture_focused = ExtResource("10_no81u")
+
+[node name="SubTitle" type="Label" parent="Book" unique_id=1829841262]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 40.0
+offset_right = 146.0
+offset_bottom = 63.0
+text = "Мои тезисы"
+vertical_alignment = 1
+
+[node name="CounterLabel" type="Label" parent="Book" unique_id=1451170600]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 40.0
+offset_right = 176.0
+offset_bottom = 63.0
+text = "4/5"
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Book" unique_id=1908851015]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 58.0
+offset_right = 176.0
+offset_bottom = 98.0
+
+[node name="EntityButton3" type="TextureButton" parent="Book/VBoxContainer" unique_id=69020287]
+layout_mode = 2
+texture_normal = ExtResource("12_gl1kh")
+texture_pressed = ExtResource("13_msold")
+texture_hover = ExtResource("14_o2uf8")
+texture_disabled = ExtResource("15_vd4vr")
+texture_focused = ExtResource("16_qpnay")
+
+[node name="EntityButton" type="TextureButton" parent="Book/VBoxContainer" unique_id=1693112811]
+layout_mode = 2
+texture_normal = ExtResource("12_gl1kh")
+texture_pressed = ExtResource("13_msold")
+texture_hover = ExtResource("14_o2uf8")
+texture_disabled = ExtResource("15_vd4vr")
+texture_focused = ExtResource("16_qpnay")
+
+[node name="EntityButton2" type="TextureButton" parent="Book/VBoxContainer" unique_id=800721086]
+layout_mode = 2
+texture_normal = ExtResource("12_gl1kh")
+texture_pressed = ExtResource("13_msold")
+texture_hover = ExtResource("14_o2uf8")
+texture_disabled = ExtResource("15_vd4vr")
+texture_focused = ExtResource("16_qpnay")
+
+[node name="EntityButton4" type="TextureButton" parent="Book/VBoxContainer" unique_id=400168047]
+layout_mode = 2
+texture_normal = ExtResource("12_gl1kh")
+texture_pressed = ExtResource("13_msold")
+texture_hover = ExtResource("14_o2uf8")
+texture_disabled = ExtResource("15_vd4vr")
+texture_focused = ExtResource("16_qpnay")
+
+[node name="EntityButton5" type="TextureButton" parent="Book/VBoxContainer" unique_id=359826272]
+layout_mode = 2
+texture_normal = ExtResource("12_gl1kh")
+texture_pressed = ExtResource("13_msold")
+texture_hover = ExtResource("14_o2uf8")
+texture_disabled = ExtResource("15_vd4vr")
+texture_focused = ExtResource("16_qpnay")
+
+[node name="EntityButton6" type="TextureButton" parent="Book/VBoxContainer" unique_id=2097365982]
+layout_mode = 2
+texture_normal = ExtResource("12_gl1kh")
+texture_pressed = ExtResource("13_msold")
+texture_hover = ExtResource("14_o2uf8")
+texture_disabled = ExtResource("15_vd4vr")
+texture_focused = ExtResource("16_qpnay")
