@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bqp1nejentkru"]
+
+[ext_resource type="Script" uid="uid://cl5iyhsddn73a" path="res://data/card_data.gd" id="1_card_data"]
+
+[resource]
+script = ExtResource("1_card_data")
+id = &"k5"
+myth_text = "Невский сказал: «Кто с мечом к нам придёт, от меча и погибнет»"
+fact_text = "Фразу написали для фильма 1938 года. Слова из Жития: «Не в силе Бог, но в правде»"
+source = "«Повесть о житии Александра Невского» (1280-е годы); фильм «Александр Невский» (1938)."
+metadata/_custom_type_script = "uid://cl5iyhsddn73a"

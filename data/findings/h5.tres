@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FindingsData" format=3 uid="uid://c4wx8qafj07ep"]
+
+[ext_resource type="Script" uid="uid://vaiisckjmuct" path="res://data/findings_data.gd" id="1_findings_data"]
+
+[resource]
+script = ExtResource("1_findings_data")
+id = &"h5"
+text = "Дата: 5 апреля по старому стилю — это 12 апреля по новому, а не 18"
+metadata/_custom_type_script = "uid://vaiisckjmuct"

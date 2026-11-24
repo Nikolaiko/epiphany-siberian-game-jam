@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 
 SceneRouter="*uid://bi3k1yxw45qk6"
 DialogueManager="*uid://c3rodes2l3gxb"
+GameState="*uid://bfuf06ftvkqx7"
 
 [debug]
 

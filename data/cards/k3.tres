@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bh7skxvbmahix"]
+
+[ext_resource type="Script" uid="uid://cl5iyhsddn73a" path="res://data/card_data.gd" id="1_card_data"]
+
+[resource]
+script = ExtResource("1_card_data")
+id = &"k3"
+myth_text = "Немцы провалились под лёд и утонули"
+fact_text = "Ни русская летопись, ни немецкая хроника, ни Житие этого не пишут. Тонущих рыцарей прославил фильм 1938 года"
+source = "Новгородская первая летопись, 1242 год; Старшая Ливонская рифмованная хроника."
+metadata/_custom_type_script = "uid://cl5iyhsddn73a"

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bf7txjoqlse81"]
+
+[ext_resource type="Script" uid="uid://da10jtmfku36d" path="res://ui/debug_menu/cards_row/cards_row.gd" id="1_7c6jx"]
+
+[node name="CardsRow" type="HBoxContainer" unique_id=1745508010]
+script = ExtResource("1_7c6jx")
+
+[node name="Title" type="Label" parent="." unique_id=1433549730]
+layout_mode = 2
+
+[node name="Side" type="Label" parent="." unique_id=1578997811]
+layout_mode = 2
+
+[node name="FlipButton" type="Button" parent="." unique_id=880330956]
+layout_mode = 2
+text = "Flip"
+
+[connection signal="pressed" from="FlipButton" to="." method="_on_card_flip_requested"]

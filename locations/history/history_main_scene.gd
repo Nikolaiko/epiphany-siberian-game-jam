@@ -3,6 +3,12 @@ extends Control
 
 signal story_finished
 
+const CARD_K1: CardData = preload("res://data/cards/k1.tres")
+const CARD_K2: CardData = preload("res://data/cards/k2.tres")
+const CARD_K3: CardData = preload("res://data/cards/k3.tres")
+const CARD_K4: CardData = preload("res://data/cards/k4.tres")
+const CARD_K5: CardData = preload("res://data/cards/k5.tres")
+
 const DIALOGUE_RESOURCE: DialogueResource = preload("res://data/dialoges/prologue.dialogue")
 
 const CAFE_BACKGROUND: Texture2D = preload("res://assets/art/backgrounds/bg_cafe_evening.png")
@@ -46,6 +52,9 @@ func _show_line(line_id: String) -> void:
 	_apply_background()
 	_apply_portrait()
 	_dialogue_text.type_out()
+
+	if _current_line.has_tag("cards"):
+		_give_cards()
 
 	_next_button.text = "Начнем!" if _current_line.has_tag("last") else "Продолжить"
 	_next_button.disabled = false
@@ -95,3 +104,10 @@ func _on_dialogue_text_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		_dialogue_text.accept_event()
 		_on_start_button_pressed()
+
+func _give_cards() -> void:
+	GameState.give_card(CARD_K1)
+	GameState.give_card(CARD_K2)
+	GameState.give_card(CARD_K3)
+	GameState.give_card(CARD_K4)
+	GameState.give_card(CARD_K5)

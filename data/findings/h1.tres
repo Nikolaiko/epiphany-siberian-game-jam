@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FindingsData" format=3 uid="uid://dqruoxj3omjci"]
+
+[ext_resource type="Script" uid="uid://vaiisckjmuct" path="res://data/findings_data.gd" id="1_iemb4"]
+
+[resource]
+script = ExtResource("1_iemb4")
+id = &"h1"
+text = "Профиль Невского на ордене — это актёр Николай Черкасов"
+metadata/_custom_type_script = "uid://vaiisckjmuct"

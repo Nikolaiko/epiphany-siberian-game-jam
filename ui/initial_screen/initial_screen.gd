@@ -19,6 +19,7 @@ func _on_start_button_pressed() -> void:
     _start_game_button.disabled = true
     _exit_game_button.disabled = true
 
+    GameState.reset_saved_data()
     start_game_pressed.emit()
 
 func _on_exit_button_pressed() -> void:
