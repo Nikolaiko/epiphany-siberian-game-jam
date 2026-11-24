@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dq6tfl8ulhaa0"]
 
 [ext_resource type="Texture2D" uid="uid://cimhonkuvjpkv" path="res://assets/art/ui/notebook/ui_notebook_open.png" id="1_nn1xk"]
+[ext_resource type="FontFile" uid="uid://bglj5ubpul8ap" path="res://assets/fonts/MrPixel.ttf" id="1_no81u"]
 [ext_resource type="Texture2D" uid="uid://xbrinnpwl1xr" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_normal.png" id="2_to05f"]
 [ext_resource type="Texture2D" uid="uid://c77ygvxdd6er" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_pressed.png" id="3_nb1dx"]
 [ext_resource type="Texture2D" uid="uid://bs2g7bgtmynec" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_hover.png" id="4_q03li"]
@@ -11,11 +12,16 @@
 [ext_resource type="Texture2D" uid="uid://duljojk32bqs0" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_hover.png" id="8_xfoq8"]
 [ext_resource type="Texture2D" uid="uid://7d1u2al0dwc1" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_disabled.png" id="9_ae1ir"]
 [ext_resource type="Texture2D" uid="uid://clj5tjxch5tqt" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_focus.png" id="10_no81u"]
-[ext_resource type="Texture2D" uid="uid://cjmrhamescbua" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_normal.png" id="12_gl1kh"]
-[ext_resource type="Texture2D" uid="uid://cwlj3ev5huhb0" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_selected.png" id="13_msold"]
-[ext_resource type="Texture2D" uid="uid://bwkoo8omptwjq" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_hover.png" id="14_o2uf8"]
-[ext_resource type="Texture2D" uid="uid://ckwpl3lkfaljo" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_disabled.png" id="15_vd4vr"]
-[ext_resource type="Texture2D" uid="uid://4rubax27ljm6" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_focus.png" id="16_qpnay"]
+[ext_resource type="PackedScene" uid="uid://bq5ud113s514y" path="res://ui/notebook_menu/sub_views/entity_item.tscn" id="12_ae1ir"]
+[ext_resource type="StyleBox" path="res://assets/art/ui/notebook/panels/ui_notebook_source.tres" id="14_msold"]
+[ext_resource type="Texture2D" uid="uid://gn0tnimjksfi" path="res://assets/art/ui/notebook/buttons/ui_notebook_action_normal.png" id="15_o2uf8"]
+[ext_resource type="Texture2D" uid="uid://couok373kxt71" path="res://assets/art/ui/notebook/buttons/ui_notebook_action_pressed.png" id="16_vd4vr"]
+[ext_resource type="Texture2D" uid="uid://b2vlsb6n16oss" path="res://assets/art/ui/notebook/buttons/ui_notebook_action_hover.png" id="17_qpnay"]
+[ext_resource type="Texture2D" uid="uid://c60krp0ypwvi3" path="res://assets/art/ui/notebook/buttons/ui_notebook_action_disabled.png" id="18_ffqqt"]
+
+[sub_resource type="Theme" id="Theme_xgabe"]
+default_font = ExtResource("1_no81u")
+default_font_size = 12
 
 [node name="NotebookMenu" type="Control" unique_id=980607780]
 layout_mode = 3
@@ -24,14 +30,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_xgabe")
 
-[node name="Dimmer" type="Control" parent="." unique_id=867720058]
+[node name="Dimmer" type="ColorRect" parent="." unique_id=2020252223]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.18039216, 0.13333334, 0.18431373, 0.49019608)
 
 [node name="Book" type="Control" parent="." unique_id=1837588522]
 layout_mode = 1
@@ -62,12 +70,89 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_nn1xk")
 
+[node name="CardDetail" type="Control" parent="Book" unique_id=471211232]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LowerLabel" type="Label" parent="Book/CardDetail" unique_id=219043363]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 277.0
+offset_right = 458.0
+offset_bottom = 293.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+theme_override_font_sizes/font_size = 9
+text = "Закрыть/Tab"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="Book/CardDetail" unique_id=1406903875]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 193.0
+offset_right = 454.0
+offset_bottom = 238.0
+theme_override_styles/panel = ExtResource("14_msold")
+
+[node name="PreviousButton" type="TextureButton" parent="Book/CardDetail" unique_id=13291137]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 252.0
+offset_right = 357.0
+offset_bottom = 276.0
+texture_normal = ExtResource("15_o2uf8")
+texture_pressed = ExtResource("16_vd4vr")
+texture_hover = ExtResource("17_qpnay")
+texture_disabled = ExtResource("18_ffqqt")
+
+[node name="ItemId" type="Label" parent="Book/CardDetail" unique_id=620064305]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 45.0
+offset_right = 363.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "K2/Факт"
+
+[node name="LocationName" type="Label" parent="Book/CardDetail" unique_id=1763834014]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 45.0
+offset_right = 454.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Музей"
+
+[node name="CardTitle" type="Label" parent="Book/CardDetail" unique_id=643273832]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 67.0
+offset_right = 454.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Заголовок
+"
+
+[node name="CardText" type="Label" parent="Book/CardDetail" unique_id=122697602]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 100.0
+offset_right = 454.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Текст"
+
 [node name="Title" type="Label" parent="Book" unique_id=852430804]
 layout_mode = 0
 offset_left = 18.0
-offset_top = 12.0
+offset_top = 8.0
 offset_right = 262.0
-offset_bottom = 35.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.99215686, 0.79607844, 0.6901961, 1)
 text = "Блокнот доклада"
 
 [node name="CloseButton" type="TextureButton" parent="Book" unique_id=767821236]
@@ -114,18 +199,20 @@ texture_focused = ExtResource("10_no81u")
 [node name="SubTitle" type="Label" parent="Book" unique_id=1829841262]
 layout_mode = 0
 offset_left = 18.0
-offset_top = 40.0
+offset_top = 37.0
 offset_right = 146.0
-offset_bottom = 63.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
 text = "Мои тезисы"
 vertical_alignment = 1
 
 [node name="CounterLabel" type="Label" parent="Book" unique_id=1451170600]
 layout_mode = 0
 offset_left = 151.0
-offset_top = 40.0
+offset_top = 37.0
 offset_right = 176.0
-offset_bottom = 63.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
 text = "4/5"
 vertical_alignment = 1
 
@@ -135,51 +222,28 @@ offset_left = 16.0
 offset_top = 58.0
 offset_right = 176.0
 offset_bottom = 98.0
+theme_override_constants/separation = 6
 
-[node name="EntityButton3" type="TextureButton" parent="Book/VBoxContainer" unique_id=69020287]
+[node name="MarginContainer3" parent="Book/VBoxContainer" unique_id=1055533383 instance=ExtResource("12_ae1ir")]
 layout_mode = 2
-texture_normal = ExtResource("12_gl1kh")
-texture_pressed = ExtResource("13_msold")
-texture_hover = ExtResource("14_o2uf8")
-texture_disabled = ExtResource("15_vd4vr")
-texture_focused = ExtResource("16_qpnay")
 
-[node name="EntityButton" type="TextureButton" parent="Book/VBoxContainer" unique_id=1693112811]
+[node name="MarginContainer2" parent="Book/VBoxContainer" unique_id=1803849589 instance=ExtResource("12_ae1ir")]
 layout_mode = 2
-texture_normal = ExtResource("12_gl1kh")
-texture_pressed = ExtResource("13_msold")
-texture_hover = ExtResource("14_o2uf8")
-texture_disabled = ExtResource("15_vd4vr")
-texture_focused = ExtResource("16_qpnay")
 
-[node name="EntityButton2" type="TextureButton" parent="Book/VBoxContainer" unique_id=800721086]
+[node name="MarginContainer" parent="Book/VBoxContainer" unique_id=1115554533 instance=ExtResource("12_ae1ir")]
 layout_mode = 2
-texture_normal = ExtResource("12_gl1kh")
-texture_pressed = ExtResource("13_msold")
-texture_hover = ExtResource("14_o2uf8")
-texture_disabled = ExtResource("15_vd4vr")
-texture_focused = ExtResource("16_qpnay")
 
-[node name="EntityButton4" type="TextureButton" parent="Book/VBoxContainer" unique_id=400168047]
+[node name="EntityItem" parent="Book/VBoxContainer" unique_id=2006388078 instance=ExtResource("12_ae1ir")]
 layout_mode = 2
-texture_normal = ExtResource("12_gl1kh")
-texture_pressed = ExtResource("13_msold")
-texture_hover = ExtResource("14_o2uf8")
-texture_disabled = ExtResource("15_vd4vr")
-texture_focused = ExtResource("16_qpnay")
 
-[node name="EntityButton5" type="TextureButton" parent="Book/VBoxContainer" unique_id=359826272]
+[node name="EntityItem2" parent="Book/VBoxContainer" unique_id=328374626 instance=ExtResource("12_ae1ir")]
 layout_mode = 2
-texture_normal = ExtResource("12_gl1kh")
-texture_pressed = ExtResource("13_msold")
-texture_hover = ExtResource("14_o2uf8")
-texture_disabled = ExtResource("15_vd4vr")
-texture_focused = ExtResource("16_qpnay")
 
-[node name="EntityButton6" type="TextureButton" parent="Book/VBoxContainer" unique_id=2097365982]
-layout_mode = 2
-texture_normal = ExtResource("12_gl1kh")
-texture_pressed = ExtResource("13_msold")
-texture_hover = ExtResource("14_o2uf8")
-texture_disabled = ExtResource("15_vd4vr")
-texture_focused = ExtResource("16_qpnay")
+[node name="LowerTitle" type="Label" parent="Book" unique_id=453240665]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 253.0
+offset_right = 178.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Название айтема"

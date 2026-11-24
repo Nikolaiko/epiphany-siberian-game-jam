@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bq5ud113s514y"]
+
+[ext_resource type="Texture2D" uid="uid://cjmrhamescbua" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_normal.png" id="1_atypg"]
+[ext_resource type="Texture2D" uid="uid://cwlj3ev5huhb0" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_selected.png" id="2_ka5l5"]
+[ext_resource type="Texture2D" uid="uid://bwkoo8omptwjq" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_hover.png" id="3_hdy7w"]
+[ext_resource type="Texture2D" uid="uid://ckwpl3lkfaljo" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_disabled.png" id="4_j2oir"]
+[ext_resource type="Texture2D" uid="uid://4rubax27ljm6" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_focus.png" id="5_iag3o"]
+
+[node name="MarginContainer" type="MarginContainer" unique_id=1055533383]
+offset_right = 160.0
+offset_bottom = 32.0
+
+[node name="EntityButton" type="TextureButton" parent="." unique_id=1040130387]
+layout_mode = 2
+texture_normal = ExtResource("1_atypg")
+texture_pressed = ExtResource("2_ka5l5")
+texture_hover = ExtResource("3_hdy7w")
+texture_disabled = ExtResource("4_j2oir")
+texture_focused = ExtResource("5_iag3o")
