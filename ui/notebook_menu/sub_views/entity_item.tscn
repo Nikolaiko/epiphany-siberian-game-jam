@@ -5,15 +5,52 @@
 [ext_resource type="Texture2D" uid="uid://bwkoo8omptwjq" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_hover.png" id="3_hdy7w"]
 [ext_resource type="Texture2D" uid="uid://ckwpl3lkfaljo" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_disabled.png" id="4_j2oir"]
 [ext_resource type="Texture2D" uid="uid://4rubax27ljm6" path="res://assets/art/ui/notebook/entries/ui_notebook_entry_focus.png" id="5_iag3o"]
+[ext_resource type="FontFile" uid="uid://bglj5ubpul8ap" path="res://assets/fonts/MrPixel.ttf" id="6_hdy7w"]
+[ext_resource type="Script" uid="uid://bmqup0hnm86ea" path="res://ui/notebook_menu/sub_views/entity_item.gd" id="6_j2oir"]
+[ext_resource type="Texture2D" uid="uid://cttmkj38rddag" path="res://assets/art/ui/notebook/icons/icon_notebook_verified_light.png" id="6_ka5l5"]
 
-[node name="MarginContainer" type="MarginContainer" unique_id=1055533383]
-offset_right = 160.0
-offset_bottom = 32.0
-
-[node name="EntityButton" type="TextureButton" parent="." unique_id=1040130387]
-layout_mode = 2
+[node name="EntityButton" type="TextureButton" unique_id=918696861]
 texture_normal = ExtResource("1_atypg")
 texture_pressed = ExtResource("2_ka5l5")
 texture_hover = ExtResource("3_hdy7w")
 texture_disabled = ExtResource("4_j2oir")
 texture_focused = ExtResource("5_iag3o")
+script = ExtResource("6_j2oir")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=522931950]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=246145777]
+layout_mode = 2
+
+[node name="Number" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1996411008]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+theme_override_fonts/font = ExtResource("6_hdy7w")
+text = "1"
+vertical_alignment = 1
+
+[node name="Name" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1869235968]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+theme_override_fonts/font = ExtResource("6_hdy7w")
+text = "Доспехи"
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=709444367]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("6_ka5l5")
+stretch_mode = 3

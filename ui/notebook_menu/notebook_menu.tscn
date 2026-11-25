@@ -2,17 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://cimhonkuvjpkv" path="res://assets/art/ui/notebook/ui_notebook_open.png" id="1_nn1xk"]
 [ext_resource type="FontFile" uid="uid://bglj5ubpul8ap" path="res://assets/fonts/MrPixel.ttf" id="1_no81u"]
+[ext_resource type="Script" uid="uid://c8qpxkdhuafoj" path="res://ui/notebook_menu/notebook_scene.gd" id="2_lva71"]
 [ext_resource type="Texture2D" uid="uid://xbrinnpwl1xr" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_normal.png" id="2_to05f"]
 [ext_resource type="Texture2D" uid="uid://c77ygvxdd6er" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_pressed.png" id="3_nb1dx"]
 [ext_resource type="Texture2D" uid="uid://bs2g7bgtmynec" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_hover.png" id="4_q03li"]
 [ext_resource type="Texture2D" uid="uid://bsuxof2g2r21f" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_disabled.png" id="5_7doqe"]
 [ext_resource type="Texture2D" uid="uid://bp3xbp24hanw5" path="res://assets/art/ui/notebook/buttons/ui_notebook_close_focus.png" id="6_g4av7"]
-[ext_resource type="Texture2D" uid="uid://dboi0ystlumdy" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_normal.png" id="7_g4av7"]
-[ext_resource type="Texture2D" uid="uid://cp123dwp1kknt" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_selected.png" id="8_ht3ri"]
-[ext_resource type="Texture2D" uid="uid://duljojk32bqs0" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_hover.png" id="8_xfoq8"]
-[ext_resource type="Texture2D" uid="uid://7d1u2al0dwc1" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_disabled.png" id="9_ae1ir"]
-[ext_resource type="Texture2D" uid="uid://clj5tjxch5tqt" path="res://assets/art/ui/notebook/tabs/ui_notebook_tab_focus.png" id="10_no81u"]
 [ext_resource type="PackedScene" uid="uid://bq5ud113s514y" path="res://ui/notebook_menu/sub_views/entity_item.tscn" id="12_ae1ir"]
+[ext_resource type="PackedScene" uid="uid://u1qqeya54gs0" path="res://ui/notebook_menu/tab_name_item/tab_name_item.tscn" id="13_0ysfm"]
 [ext_resource type="StyleBox" path="res://assets/art/ui/notebook/panels/ui_notebook_source.tres" id="14_msold"]
 [ext_resource type="Texture2D" uid="uid://gn0tnimjksfi" path="res://assets/art/ui/notebook/buttons/ui_notebook_action_normal.png" id="15_o2uf8"]
 [ext_resource type="Texture2D" uid="uid://couok373kxt71" path="res://assets/art/ui/notebook/buttons/ui_notebook_action_pressed.png" id="16_vd4vr"]
@@ -23,6 +20,9 @@
 default_font = ExtResource("1_no81u")
 default_font_size = 12
 
+[sub_resource type="ButtonGroup" id="ButtonGroup_gl1kh"]
+resource_name = "TabsGroup"
+
 [node name="NotebookMenu" type="Control" unique_id=980607780]
 layout_mode = 3
 anchors_preset = 15
@@ -31,6 +31,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_xgabe")
+script = ExtResource("2_lva71")
+tabs_group = SubResource("ButtonGroup_gl1kh")
 
 [node name="Dimmer" type="ColorRect" parent="." unique_id=2020252223]
 layout_mode = 1
@@ -90,13 +92,44 @@ text = "Закрыть/Tab"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="Book/CardDetail" unique_id=1406903875]
+[node name="ScrollContainer" type="ScrollContainer" parent="Book/CardDetail" unique_id=1692400001]
 layout_mode = 0
 offset_left = 213.0
-offset_top = 193.0
+offset_top = 100.0
 offset_right = 454.0
 offset_bottom = 238.0
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Book/CardDetail/ScrollContainer" unique_id=1692400002]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="CardText" type="Label" parent="Book/CardDetail/ScrollContainer/VBoxContainer" unique_id=122697602]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Текст"
+autowrap_mode = 3
+
+[node name="SourcePanel" type="PanelContainer" parent="Book/CardDetail/ScrollContainer/VBoxContainer" unique_id=1406903875]
+layout_mode = 2
+mouse_filter = 1
 theme_override_styles/panel = ExtResource("14_msold")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Book/CardDetail/ScrollContainer/VBoxContainer/SourcePanel" unique_id=833121390]
+layout_mode = 2
+
+[node name="SourceTitle" type="Label" parent="Book/CardDetail/ScrollContainer/VBoxContainer/SourcePanel/VBoxContainer" unique_id=506762746]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Title"
+autowrap_mode = 3
+
+[node name="SourceText" type="Label" parent="Book/CardDetail/ScrollContainer/VBoxContainer/SourcePanel/VBoxContainer" unique_id=1348376253]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+text = "Text"
+autowrap_mode = 3
 
 [node name="PreviousButton" type="TextureButton" parent="Book/CardDetail" unique_id=13291137]
 layout_mode = 0
@@ -108,6 +141,20 @@ texture_normal = ExtResource("15_o2uf8")
 texture_pressed = ExtResource("16_vd4vr")
 texture_hover = ExtResource("17_qpnay")
 texture_disabled = ExtResource("18_ffqqt")
+
+[node name="Label" type="Label" parent="Book/CardDetail/PreviousButton" unique_id=1414392404]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
+theme_override_fonts/font = ExtResource("1_no81u")
+theme_override_font_sizes/font_size = 11
+text = "Как я раньше думал"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ItemId" type="Label" parent="Book/CardDetail" unique_id=620064305]
 layout_mode = 0
@@ -137,15 +184,6 @@ theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
 text = "Заголовок
 "
 
-[node name="CardText" type="Label" parent="Book/CardDetail" unique_id=122697602]
-layout_mode = 0
-offset_left = 213.0
-offset_top = 100.0
-offset_right = 454.0
-offset_bottom = 183.0
-theme_override_colors/font_color = Color(0.29803923, 0.24313726, 0.14117648, 1)
-text = "Текст"
-
 [node name="Title" type="Label" parent="Book" unique_id=852430804]
 layout_mode = 0
 offset_left = 18.0
@@ -172,29 +210,23 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="StoriesTab" type="TextureButton" parent="Book/Tabs" unique_id=1015558451]
+[node name="StoriesTab" parent="Book/Tabs" unique_id=1742683772 instance=ExtResource("13_0ysfm")]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 274.0
 offset_top = 12.0
 offset_right = 346.0
 offset_bottom = 36.0
-texture_normal = ExtResource("7_g4av7")
-texture_pressed = ExtResource("8_ht3ri")
-texture_hover = ExtResource("8_xfoq8")
-texture_disabled = ExtResource("9_ae1ir")
-texture_focused = ExtResource("10_no81u")
+toggle_mode = true
 
-[node name="FindingsTab" type="TextureButton" parent="Book/Tabs" unique_id=1978589709]
+[node name="FindingsTab" parent="Book/Tabs" unique_id=580818559 instance=ExtResource("13_0ysfm")]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 346.0
 offset_top = 12.0
 offset_right = 418.0
 offset_bottom = 36.0
-texture_normal = ExtResource("7_g4av7")
-texture_pressed = ExtResource("8_ht3ri")
-texture_hover = ExtResource("8_xfoq8")
-texture_disabled = ExtResource("9_ae1ir")
-texture_focused = ExtResource("10_no81u")
+toggle_mode = true
 
 [node name="SubTitle" type="Label" parent="Book" unique_id=1829841262]
 layout_mode = 0
@@ -224,20 +256,30 @@ offset_right = 176.0
 offset_bottom = 98.0
 theme_override_constants/separation = 6
 
-[node name="MarginContainer3" parent="Book/VBoxContainer" unique_id=1055533383 instance=ExtResource("12_ae1ir")]
+[node name="Item_1" parent="Book/VBoxContainer" unique_id=1055533383 instance=ExtResource("12_ae1ir")]
+unique_name_in_owner = true
 layout_mode = 2
+toggle_mode = true
 
-[node name="MarginContainer2" parent="Book/VBoxContainer" unique_id=1803849589 instance=ExtResource("12_ae1ir")]
+[node name="Item_2" parent="Book/VBoxContainer" unique_id=1803849589 instance=ExtResource("12_ae1ir")]
+unique_name_in_owner = true
 layout_mode = 2
+toggle_mode = true
 
-[node name="MarginContainer" parent="Book/VBoxContainer" unique_id=1115554533 instance=ExtResource("12_ae1ir")]
+[node name="Item_3" parent="Book/VBoxContainer" unique_id=1115554533 instance=ExtResource("12_ae1ir")]
+unique_name_in_owner = true
 layout_mode = 2
+toggle_mode = true
 
-[node name="EntityItem" parent="Book/VBoxContainer" unique_id=2006388078 instance=ExtResource("12_ae1ir")]
+[node name="Item_4" parent="Book/VBoxContainer" unique_id=2006388078 instance=ExtResource("12_ae1ir")]
+unique_name_in_owner = true
 layout_mode = 2
+toggle_mode = true
 
-[node name="EntityItem2" parent="Book/VBoxContainer" unique_id=328374626 instance=ExtResource("12_ae1ir")]
+[node name="Item_5" parent="Book/VBoxContainer" unique_id=328374626 instance=ExtResource("12_ae1ir")]
+unique_name_in_owner = true
 layout_mode = 2
+toggle_mode = true
 
 [node name="LowerTitle" type="Label" parent="Book" unique_id=453240665]
 layout_mode = 0
